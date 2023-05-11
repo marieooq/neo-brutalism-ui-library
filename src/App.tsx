@@ -1,5 +1,6 @@
 import Dialog from "./components/Dialog";
 import Button from "./components/Button";
+import DropDown from "./components/DropDown";
 import "./App.css";
 
 function App() {
@@ -13,6 +14,9 @@ function App() {
         <Button buttonText="Confirm" rounded="md" />
         <Button buttonText="Confirm" rounded="full" />
         <Button buttonText="Confirm" rounded="none" disabled />
+      </div>
+      <div className="flex">
+        <DropDown />
       </div>
     </div>
   );
