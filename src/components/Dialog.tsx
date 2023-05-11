@@ -1,6 +1,4 @@
-import React from "react";
-
-type Dialog = {
+type DialogType = {
   message?: string;
   actionButtonText?: string;
   cancelButtonText?: string;
@@ -10,7 +8,7 @@ const Dialog = ({
   message = "The message you want goes in here.",
   actionButtonText = "Enabled",
   cancelButtonText = "Cancel",
-}: Dialog) => {
+}: DialogType) => {
   return (
     <div className="w-96 px-8 py-4 border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center">
       <div>
