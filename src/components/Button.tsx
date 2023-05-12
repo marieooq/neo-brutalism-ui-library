@@ -1,3 +1,4 @@
+import React from "react";
 import classNames from "classnames";
 
 type ButtonType = {
@@ -14,7 +15,7 @@ const Button = ({
   return (
     <button
       className={classNames(
-        "border-black border-2 rounded-none p-2.5 bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#00E1EF]",
+        "border-black border-2 p-2.5 bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#00E1EF]",
         { "rounded-none": rounded === "none" },
         { "rounded-md": rounded === "md" },
         { "rounded-full": rounded === "full" },
