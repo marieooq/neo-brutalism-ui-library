@@ -1,6 +1,7 @@
 import Dialog from "./components/Dialog";
 import Button from "./components/Button";
 import DropDown from "./components/DropDown";
+import PencilIconButton from "./components/PencilIconButton";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,11 @@ function App() {
       </div>
       <div className="flex">
         <DropDown />
+      </div>
+      <div className="flex space-x-4">
+        <PencilIconButton size="sm" />
+        <PencilIconButton size="md" />
+        <PencilIconButton size="lg" />
       </div>
     </div>
   );

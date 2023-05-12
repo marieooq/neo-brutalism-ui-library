@@ -39,14 +39,12 @@ const DropDown = () => {
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
-          //   tabindex="-1"
         >
           <div role="none">
             <a
               href=""
               className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
               role="menuitem"
-              //   tabindex="-1"
               id="menu-item-0"
             >
               Account settings
@@ -55,7 +53,6 @@ const DropDown = () => {
               href=""
               className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
               role="menuitem"
-              //   tabindex="-1"
               id="menu-item-1"
             >
               Support
@@ -64,7 +61,6 @@ const DropDown = () => {
               href=""
               className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
               role="menuitem"
-              //   tabindex="-1"
               id="menu-item-2"
             >
               License
