@@ -8,7 +8,7 @@ const EditButton = ({ size = "sm", rounded = "none" }: EditButtonType) => {
   return (
     <button
       className={classNames(
-        "border-black border-2 rounded bg-[#FFF066] hover:bg-[#FFE500]",
+        "border-black border-2 rounded bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500]",
         {
           "w-10 h-10 p-2.5 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]":
             size === "sm",

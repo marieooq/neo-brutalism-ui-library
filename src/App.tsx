@@ -3,6 +3,8 @@ import Button from "./components/Button";
 import DropDown from "./components/DropDown";
 import EditButton from "./components/EditButton";
 import AddButton from "./components/AddButton";
+import HomeIconButton from "./components/HomeIconButton";
+import GearIconButton from "./components/GearIconButton";
 import "./App.css";
 
 function App() {
@@ -29,6 +31,10 @@ function App() {
         <AddButton size="sm" rounded="none" />
         <AddButton size="md" rounded="md" />
         <AddButton size="lg" rounded="full" />
+      </div>
+      <div className="flex space-x-4 items-center">
+        <HomeIconButton />
+        <GearIconButton />
       </div>
     </div>
   );
