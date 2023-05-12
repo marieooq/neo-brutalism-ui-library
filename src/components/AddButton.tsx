@@ -1,13 +1,10 @@
 import classNames from "classnames";
 
-type AddIconButtonType = {
+type AddButtonType = {
   size?: "lg" | "md" | "sm";
   rounded?: "none" | "md" | "full";
 };
-const AddIconButton = ({
-  size = "sm",
-  rounded = "none",
-}: AddIconButtonType) => {
+const AddButton = ({ size = "sm", rounded = "none" }: AddButtonType) => {
   return (
     <button
       className={classNames(
@@ -60,4 +57,4 @@ const AddIconButton = ({
   );
 };
 
-export default AddIconButton;
+export default AddButton;

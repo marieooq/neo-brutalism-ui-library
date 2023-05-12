@@ -1,13 +1,10 @@
 import classNames from "classnames";
 
-type PencilIconButtonType = {
+type EditButtonType = {
   size?: "lg" | "md" | "sm";
   rounded?: "none" | "md" | "full";
 };
-const PencilIconButton = ({
-  size = "sm",
-  rounded = "none",
-}: PencilIconButtonType) => {
+const EditButton = ({ size = "sm", rounded = "none" }: EditButtonType) => {
   return (
     <button
       className={classNames(
@@ -64,4 +61,4 @@ const PencilIconButton = ({
   );
 };
 
-export default PencilIconButton;
+export default EditButton;

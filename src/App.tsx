@@ -1,8 +1,8 @@
 import Dialog from "./components/Dialog";
 import Button from "./components/Button";
 import DropDown from "./components/DropDown";
-import PencilIconButton from "./components/PencilIconButton";
-import AddIconButton from "./components/AddIconButton";
+import EditButton from "./components/EditButton";
+import AddButton from "./components/AddButton";
 import "./App.css";
 
 function App() {
@@ -21,14 +21,14 @@ function App() {
         <DropDown />
       </div>
       <div className="flex space-x-4 items-center">
-        <PencilIconButton size="sm" rounded="none" />
-        <PencilIconButton size="md" rounded="md" />
-        <PencilIconButton size="lg" rounded="full" />
+        <EditButton size="sm" rounded="none" />
+        <EditButton size="md" rounded="md" />
+        <EditButton size="lg" rounded="full" />
       </div>
       <div className="flex space-x-4 items-center">
-        <AddIconButton size="sm" rounded="none" />
-        <AddIconButton size="md" rounded="md" />
-        <AddIconButton size="lg" rounded="full" />
+        <AddButton size="sm" rounded="none" />
+        <AddButton size="md" rounded="md" />
+        <AddButton size="lg" rounded="full" />
       </div>
     </div>
   );
