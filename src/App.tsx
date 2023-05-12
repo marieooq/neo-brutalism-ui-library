@@ -37,9 +37,10 @@ function App() {
         <HomeIconButton />
         <GearIconButton />
       </div>
-      <div className="flex space-x-4 items-center">
-        {" "}
+      <div className="flex flex-col space-y-4 ">
         <Input />
+        <Input rounded="md" />
+        <Input rounded="full" />
       </div>
     </div>
   );
