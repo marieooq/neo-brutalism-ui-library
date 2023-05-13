@@ -6,6 +6,7 @@ import AddButton from "./components/AddButton";
 import HomeIconButton from "./components/HomeIconButton";
 import GearIconButton from "./components/GearIconButton";
 import Input from "./components/Input";
+import CheckBox from "./components/Checkbox";
 import "./App.css";
 
 function App() {
@@ -37,10 +38,15 @@ function App() {
         <HomeIconButton />
         <GearIconButton />
       </div>
-      <div className="flex flex-col space-y-4 ">
+      <div className="flex flex-col space-y-4">
         <Input />
         <Input rounded="md" />
         <Input rounded="full" />
+      </div>
+      <div className="flex flex-col justify-items-start space-y-4">
+        <CheckBox />
+        <CheckBox />
+        <CheckBox />
       </div>
     </div>
   );
