@@ -77,7 +77,24 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="bg-yellow-200 w-full h-screen">Section</section>
+      <section className="bg-yellow-200 w-full h-screen">
+        <div className="w-10/12 h-full m-auto py-20">
+          <h2 className="text-7xl mb-12 tracking-tight font-bold">
+            Tailwind based components
+          </h2>
+          <div className="flex justify-between items-center">
+            <div className="w-[30%]">
+              <Card />
+            </div>
+            <div className="w-[30%]">
+              <Card />
+            </div>
+            <div className="w-[30%]">
+              <Card />
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="bg-pink-200 w-full h-screen">Section</section>
     </div>
   );
