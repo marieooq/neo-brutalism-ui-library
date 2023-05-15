@@ -1,4 +1,3 @@
-import React from "react";
 import SampleImage from "../assets/neo-brutalism-image3.jpg";
 
 const Card = () => {

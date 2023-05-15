@@ -1,15 +1,10 @@
-import Dialog from "./components/Dialog";
-import Button from "./components/Button";
-import DropDown from "./components/DropDown";
-import EditButton from "./components/EditButton";
-import AddButton from "./components/AddButton";
-import HomeIconButton from "./components/HomeIconButton";
-import GearIconButton from "./components/GearIconButton";
-import Input from "./components/Input";
-import CheckBoxLarge from "./components/CheckboxLarge";
-import Card from "./components/Card";
-import SampleImage from "./assets/neo-brutalism-image3.jpg";
 import "./App.css";
+import SampleImage from "./assets/neo-brutalism-image3.jpg";
+import Button from "./components/Button";
+import Card from "./components/Card";
+import CheckBoxLarge from "./components/CheckboxLarge";
+import DropDown from "./components/DropDown";
+import Input from "./components/Input";
 
 function App() {
   return (
@@ -47,7 +42,7 @@ function App() {
       <section className="bg-green-200 w-full h-screen">
         <div className="w-10/12 h-full m-auto py-20 flex justify-between items-center">
           <div className="flex-1 pr-12">
-            <h2 className="text-7xl mb-12">
+            <h2 className="text-7xl mb-12 tracking-tight font-bold">
               Check the box that applies to your situation.
             </h2>
             <div className="flex mb-4">
@@ -95,7 +90,17 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="bg-pink-200 w-full h-screen">Section</section>
+      <section className="bg-violet-300 w-full h-screen">
+        <div className="w-10/12 h-full m-auto py-20 flex justify-between items-center">
+          <div className="w-1/2 flex flex-col">
+            <Input />
+            <Input />
+            <Input />
+            <DropDown />
+          </div>
+          <div className="w-1/2"></div>
+        </div>
+      </section>
     </div>
   );
 }

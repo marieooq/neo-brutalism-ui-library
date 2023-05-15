@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import classNames from "classnames";
+import { useState } from "react";
 
 const CheckboxLarge = () => {
   const [checked, setChecked] = useState(false);
