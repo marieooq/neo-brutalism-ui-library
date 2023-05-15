@@ -7,6 +7,7 @@ import HomeIconButton from "./components/HomeIconButton";
 import GearIconButton from "./components/GearIconButton";
 import Input from "./components/Input";
 import CheckBox from "./components/Checkbox";
+import Card from "./components/Card";
 import "./App.css";
 
 function App() {
@@ -43,10 +44,13 @@ function App() {
         <Input rounded="md" />
         <Input rounded="full" />
       </div>
-      <div className="flex flex-col justify-items-start space-y-4">
+      <div className="flex flex-col justify-items-start items-start space-y-4">
         <CheckBox />
         <CheckBox />
         <CheckBox />
+      </div>
+      <div className="flex  space-y-4">
+        <Card />
       </div>
     </div>
   );
