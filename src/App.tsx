@@ -18,16 +18,16 @@ function App() {
         <header className="bg-white h-20">
           <div className="w-10/12 h-full m-auto flex justify-between items-center">
             <div className="text-2xl font-bold">NEO-UI.</div>
-            <nav className="w-3/4">
-              <ul className="flex justify-around items-center">
+            <nav className="w-1/2">
+              <ul className="flex justify-between items-center">
                 <li className="inliine-block hover:underline hover:underline-offset-8">
                   <a href="#">Link 1</a>
                 </li>
                 <li className="inliine-block hover:underline hover:underline-offset-8">
-                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
                 </li>
                 <li className="inliine-block hover:underline hover:underline-offset-8">
-                  <a href="#">Link 1</a>
+                  <a href="#">Link 3</a>
                 </li>
                 <li>
                   <Button buttonText="Get Started" />
