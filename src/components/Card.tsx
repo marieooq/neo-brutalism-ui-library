@@ -14,9 +14,9 @@ const Card = () => {
             />
           </figure>
           <div className="px-6 py-5 text-left h-full">
-            <p className="text-base mb-5">May 15th, 2023</p>
-            <h1 className="text-[32px] mb-5">Neo Brutallism</h1>
-            <p className="text-xs mb-5 line-clamp-4">
+            <p className="text-base mb-4">May 15th, 2023</p>
+            <h1 className="text-[32px] mb-4">Neo Brutallism</h1>
+            <p className="text-xs mb-4 line-clamp-4">
               Neobrutalism is an aesthetic characterized by high contrast
               elements, bright colors, and bold shapes. It is often used to make
               a statement, as it is meant to be eye-catching and stand out to
