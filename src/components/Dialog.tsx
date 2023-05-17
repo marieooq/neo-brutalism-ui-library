@@ -11,7 +11,7 @@ const Dialog = ({
   cancelButtonText = "Cancel",
 }: DialogType) => {
   return (
-    <div className="w-96 px-8 py-4 border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center">
+    <div className="w-96 px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center">
       <div>
         <h1 className="text-2xl mb-4">{message}</h1>
         <div className="flex space-x-2 mx-auto w-32">
