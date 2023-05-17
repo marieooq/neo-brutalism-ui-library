@@ -3,14 +3,13 @@ import Button from "./Button";
 
 const Header = () => {
   return (
-    <header className="bg-white h-20 w-full fixed top-0">
+    <header className="bg-white h-20 w-full fixed top-0 z-50">
       <div className="w-10/12 h-full m-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">NEO-UI.</div>
-        <nav className="w-1/2">
+        <Link to="/" className="text-2xl font-bold">
+          NEO-UI.
+        </Link>
+        <nav className="w-1/3">
           <ul className="flex justify-between items-center">
-            <li className="inliine-block hover:underline hover:underline-offset-8">
-              <Link to="/">Home</Link>
-            </li>
             <li className="inliine-block hover:underline hover:underline-offset-8">
               <Link to="/getting-started">Get Started</Link>
             </li>
