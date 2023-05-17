@@ -1,39 +1,16 @@
+import { Link } from "react-router-dom";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import SampleImage from "../assets/neo-brutalism-image3.jpg";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import CheckBoxLarge from "../components/CheckboxLarge";
-import SyntaxHighlighter from "react-syntax-highlighter";
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
     <div className="snap-mandatory snap-y overflow-scroll">
-      <section className="bg-teal-200 w-full h-screen snap-start snap-always shrink-0 ">
-        <header className="bg-white h-20">
-          <div className="w-10/12 h-full m-auto flex justify-between items-center">
-            <div className="text-2xl font-bold">NEO-UI.</div>
-            <nav className="w-1/2">
-              <ul className="flex justify-between items-center">
-                <li className="inliine-block hover:underline hover:underline-offset-8">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="inliine-block hover:underline hover:underline-offset-8">
-                  <Link to="/">Home</Link>
-                </li>
-                <li className="inliine-block hover:underline hover:underline-offset-8">
-                  <Link to="/">Home</Link>
-                </li>
-                <li>
-                  <Link to="getting-started">
-                    <Button buttonText="Get Started" />
-                  </Link>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-        <div className="w-full h-[calc(100vh-80px)] bg-pink-200">
+      <section className="bg-teal-200 w-full  h-[calc(100vh-80px)] snap-start snap-always shrink-0">
+        <div className="w-full h-full bg-pink-200">
           <img
             src={SampleImage}
             alt="hero"
