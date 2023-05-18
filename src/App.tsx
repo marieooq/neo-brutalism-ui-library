@@ -4,6 +4,7 @@ import GettingStarted from "./pages/GettingStarted";
 import Components from "./pages/Components";
 import Component from "./pages/Component";
 import Layout from "./components/Layout";
+import LeftSidebar from "./components/LeftSidebar";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="/getting-started" element={<GettingStarted />} />
-        <Route path="/components">
+        <Route path="/components" element={<LeftSidebar />}>
           <Route index element={<Components />} />
           <Route path=":id" element={<Component />} />
         </Route>
