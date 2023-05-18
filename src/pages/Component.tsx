@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import logo from "../assets/neo-bg-image.png";
+import copyIcon from "../assets/copy.svg";
 import Card from "../components/Card";
 
 const Component = () => {
@@ -36,7 +37,8 @@ const Component = () => {
           </div>
           <div className="flex justify-end mb-3">
             <CopyToClipboard onCopy={onCopy} text={text}>
-              <button className="h-12 border-black border-2 p-2.5 bg-lime-200 hover:bg-lime-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-lime-400">
+              <button className="flex items-center h-12 border-black border-2 p-2.5 bg-lime-200 hover:bg-lime-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-lime-400">
+                <img src={copyIcon} alt="coopy" className="w-5 h-5 mr-2" />
                 Copy to clipboard
               </button>
             </CopyToClipboard>
