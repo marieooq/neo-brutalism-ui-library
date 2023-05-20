@@ -1,6 +1,5 @@
 import { useCallback, useContext, useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-import ReactDOMServer from "react-dom/server";
 import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
@@ -23,7 +22,7 @@ const Component = () => {
   }, [dispatch]);
 
   useEffect(() => {
-    setText(ReactDOMServer.renderToStaticMarkup(<Card />));
+    setText(cardMarkup());
   }, []);
 
   return (
@@ -51,11 +50,9 @@ const Component = () => {
             <SyntaxHighlighter
               language="javascript"
               style={a11yDark}
-              className="rounded-lg w-full break-words"
               wrapLongLines={true}
               lineProps={{ style: { flexWrap: "wrap" } }}
             >
-              {/* {ReactDOMServer.renderToStaticMarkup(<Card />)} */}
               {cardMarkup()}
             </SyntaxHighlighter>
           </div>
