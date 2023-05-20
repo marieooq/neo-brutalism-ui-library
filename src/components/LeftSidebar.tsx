@@ -5,8 +5,11 @@ const LeftSidebar = () => {
     <section className="w-full flex">
       <div className="bg-yellow-200 fixed top-20 left-0 w-[300px] h-screen overflow-y-scroll p-16">
         <ul className="flex flex-col">
-          <li className="inliine-block hover:underline hover:underline-offset-8">
+          <li className="inliine-block hover:underline hover:underline-offset-8 mb-4">
             <Link to="/components/card">Card</Link>
+          </li>
+          <li className="inliine-block hover:underline hover:underline-offset-8 mb-4">
+            <Link to="/components/addButton">AddButton</Link>
           </li>
         </ul>
       </div>
