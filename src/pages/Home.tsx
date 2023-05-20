@@ -114,7 +114,7 @@ const Home = () => {
               engagement. Experience the difference of our services, all at no
               cost, and take your web design to the next level!
             </p>
-            <Link to="getting-started">
+            <Link to="overview">
               <Button buttonText="Get Started" />
             </Link>
           </div>

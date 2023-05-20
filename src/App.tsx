@@ -36,7 +36,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path="/getting-started" element={<GettingStarted />} />
+            <Route path="/overview" element={<LeftSidebar />}>
+              <Route index element={<GettingStarted />} />
+            </Route>
             <Route path="/components" element={<LeftSidebar />}>
               <Route index element={<Components />} />
               <Route path=":id" element={<Component />} />
