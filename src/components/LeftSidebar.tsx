@@ -8,10 +8,11 @@ const LeftSidebar = () => {
         <ul className="flex flex-col">
           {componentsData.map((obj, index) => {
             return (
-              <li className="inliine-block hover:underline hover:underline-offset-8 mb-4">
-                <Link to={`/components/${obj.path}`} key={index}>
-                  {obj.name}
-                </Link>
+              <li
+                className="inliine-block hover:underline hover:underline-offset-8 mb-4"
+                key={index}
+              >
+                <Link to={`/components/${obj.path}`}>{obj.name}</Link>
               </li>
             );
           })}
