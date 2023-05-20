@@ -3,15 +3,16 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import copyIcon from "../assets/copy.svg";
 import logo from "../assets/neo-bg-image.png";
 import Card from "../components/Card";
-import AddButton from "../components/AddButton";
+import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import cardMarkup from "../data/cardMarkup";
-import addButtonMarkup from "../data/addButtonMarkup";
+import componentsData from "../data/componentsData";
 
 type displayingComponentType = {
+  name: string;
+  path: string;
   component: React.ReactNode;
   markup: () => string;
 };
@@ -19,6 +20,8 @@ type displayingComponentType = {
 const Component = () => {
   const [displayingComponent, setDisplayingComponent] =
     useState<displayingComponentType>({
+      name: "Card",
+      path: "card",
       component: <Card />,
       markup: cardMarkup,
     });
@@ -34,19 +37,8 @@ const Component = () => {
   }, [dispatch]);
 
   const switchComopnents = (id: string) => {
-    switch (id) {
-      case "card":
-        setDisplayingComponent({ component: <Card />, markup: cardMarkup });
-        break;
-      case "addButton":
-        setDisplayingComponent({
-          component: <AddButton />,
-          markup: addButtonMarkup,
-        });
-        break;
-      default:
-        setDisplayingComponent({ component: <Card />, markup: cardMarkup });
-    }
+    const selectedData = componentsData.find((obj) => obj.path === id);
+    selectedData && setDisplayingComponent(selectedData);
   };
 
   useEffect(() => {
