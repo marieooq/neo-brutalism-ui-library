@@ -11,7 +11,9 @@ import {
   CopiedCodeDispatchContext,
 } from "./context/CopiedCodeContext.js";
 
-const copyReducer = (_, action: any) => {
+export type ACTIONTYPE = { type: "copied" } | { type: "done" };
+
+const copyReducer = (_: any, action: ACTIONTYPE) => {
   switch (action.type) {
     case "copied": {
       return true;

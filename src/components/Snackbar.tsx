@@ -12,9 +12,10 @@ const Snackbar = () => {
   const dispatch = useContext(CopiedCodeDispatchContext);
 
   setTimeout(() => {
-    dispatch({
-      type: "done",
-    });
+    dispatch &&
+      dispatch({
+        type: "done",
+      });
   }, 3000);
 
   console.log({ isCopy });

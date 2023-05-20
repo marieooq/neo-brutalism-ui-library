@@ -16,9 +16,10 @@ const Component = () => {
   const { id } = useParams();
 
   const onCopy = useCallback(() => {
-    dispatch({
-      type: "copied",
-    });
+   dispatch &&
+     dispatch({
+       type: "copied",
+     });
   }, [dispatch]);
 
   useEffect(() => {
