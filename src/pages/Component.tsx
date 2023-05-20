@@ -1,29 +1,33 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import ReactDOMServer from "react-dom/server";
 import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import logo from "../assets/neo-bg-image.png";
+import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import copyIcon from "../assets/copy.svg";
+import logo from "../assets/neo-bg-image.png";
 import Card from "../components/Card";
+import cardMarkup from "../data/cardMarkup";
 
 const Component = () => {
   const [text, setText] = useState("");
-  const [copied, setCopied] = useState(false);
+  const dispatch = useContext(CopiedCodeDispatchContext);
 
   const { id } = useParams();
 
   const onCopy = useCallback(() => {
-    setCopied(true);
-  }, []);
+    dispatch({
+      type: "copied",
+    });
+  }, [dispatch]);
 
   useEffect(() => {
     setText(ReactDOMServer.renderToStaticMarkup(<Card />));
   }, []);
 
   return (
-    <div>
+    <div className="relative">
       <h1 className="font-bold capitalize text-4xl mb-8">{id}</h1>
       {id === "card" && (
         <>
@@ -51,7 +55,8 @@ const Component = () => {
               wrapLongLines={true}
               lineProps={{ style: { flexWrap: "wrap" } }}
             >
-              {ReactDOMServer.renderToStaticMarkup(<Card />)}
+              {/* {ReactDOMServer.renderToStaticMarkup(<Card />)} */}
+              {cardMarkup()}
             </SyntaxHighlighter>
           </div>
         </>
