@@ -18,7 +18,7 @@ const LeftSidebar = () => {
           })}
         </ul>
       </div>
-      <div className="bg-cyan-200 w-[calc(100vw-300px)] ml-[300px] py-24 px-16">
+      <div className="bg-cyan-200 w-[calc(100vw-300px)] ml-[300px] p-16">
         <Outlet />
       </div>
     </section>
