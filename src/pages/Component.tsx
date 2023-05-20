@@ -17,7 +17,6 @@ type displayingComponentType = {
 };
 
 const Component = () => {
-  const [text, setText] = useState("");
   const [displayingComponent, setDisplayingComponent] =
     useState<displayingComponentType>({
       component: <Card />,
@@ -49,9 +48,6 @@ const Component = () => {
         setDisplayingComponent({ component: <Card />, markup: cardMarkup });
     }
   };
-  useEffect(() => {
-    setText(cardMarkup());
-  }, []);
 
   useEffect(() => {
     id && switchComopnents(id);
@@ -60,32 +56,37 @@ const Component = () => {
   return (
     <div className="relative">
       <h1 className="font-bold capitalize text-4xl mb-8">{id}</h1>
-      <>
-        <div
-          className="flex justify-center items-center border-black border-2 rounded mb-12 bg-[#CA8AE0] bg-repeat"
-          style={{ backgroundImage: `url(${logo})` }}
-        >
-          <div className="w-96 py-10">{displayingComponent?.component}</div>
-        </div>
-        <div className="flex justify-end mb-3">
-          <CopyToClipboard onCopy={onCopy} text={text}>
-            <button className="flex items-center h-12 border-black border-2 p-2.5 bg-lime-200 hover:bg-lime-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-lime-400">
-              <img src={copyIcon} alt="coopy" className="w-5 h-5 mr-2" />
-              Copy to clipboard
-            </button>
-          </CopyToClipboard>
-        </div>
-        <div>
-          <SyntaxHighlighter
-            language="javascript"
-            style={a11yDark}
-            wrapLongLines={true}
-            lineProps={{ style: { flexWrap: "wrap" } }}
+      {displayingComponent && (
+        <>
+          <div
+            className="flex justify-center items-center border-black border-2 rounded mb-12 bg-[#CA8AE0] bg-repeat"
+            style={{ backgroundImage: `url(${logo})` }}
           >
-            {displayingComponent.markup()}
-          </SyntaxHighlighter>
-        </div>
-      </>
+            <div className="w-96 py-10">{displayingComponent?.component}</div>
+          </div>
+          <div className="flex justify-end mb-3">
+            <CopyToClipboard
+              onCopy={onCopy}
+              text={displayingComponent?.markup()}
+            >
+              <button className="flex items-center h-12 border-black border-2 p-2.5 bg-lime-200 hover:bg-lime-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-lime-400">
+                <img src={copyIcon} alt="coopy" className="w-5 h-5 mr-2" />
+                Copy to clipboard
+              </button>
+            </CopyToClipboard>
+          </div>
+          <div>
+            <SyntaxHighlighter
+              language="javascript"
+              style={a11yDark}
+              wrapLongLines={true}
+              lineProps={{ style: { flexWrap: "wrap" } }}
+            >
+              {displayingComponent?.markup()}
+            </SyntaxHighlighter>
+          </div>
+        </>
+      )}
     </div>
   );
 };
