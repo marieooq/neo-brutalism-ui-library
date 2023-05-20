@@ -18,7 +18,6 @@ const Snackbar = () => {
       });
   }, 3000);
 
-  console.log({ isCopy });
   return (
     <div
       className={classNames(
