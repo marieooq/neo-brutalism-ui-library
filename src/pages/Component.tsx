@@ -54,7 +54,7 @@ const Component = () => {
             className="flex justify-center items-center border-black border-2 rounded mb-12 bg-violet-300 min-h-[360px]"
             // style={{ backgroundImage: `url(${logo})` }}
           >
-            <div className="w-96 py-10">{displayingComponent?.component}</div>
+            <div className="py-10">{displayingComponent?.component}</div>
           </div>
           <div className="flex justify-end mb-3">
             <CopyToClipboard

@@ -1,6 +1,6 @@
 const addButtonMarkup = (): string => {
   return `
-  <div className="flex justify-evenly">
+  <div class="flex justify-evenly space-x-8">
    <!--   rectangular -->
    <button
       class=
