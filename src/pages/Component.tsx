@@ -51,8 +51,8 @@ const Component = () => {
       {displayingComponent && (
         <>
           <div
-            className="flex justify-center items-center border-black border-2 rounded mb-12 bg-[#CA8AE0] bg-repeat"
-            style={{ backgroundImage: `url(${logo})` }}
+            className="flex justify-center items-center border-black border-2 rounded mb-12 bg-violet-300 min-h-[360px]"
+            // style={{ backgroundImage: `url(${logo})` }}
           >
             <div className="w-96 py-10">{displayingComponent?.component}</div>
           </div>

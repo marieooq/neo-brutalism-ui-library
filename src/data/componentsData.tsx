@@ -22,7 +22,13 @@ const componentsData = [
   {
     name: "AddButton",
     path: "addButton",
-    component: <AddButton />,
+    component: (
+      <div className="flex justify-evenly">
+        <AddButton />
+        <AddButton rounded="md" />
+        <AddButton rounded="full" />
+      </div>
+    ),
     markup: addButtonMarkup,
   },
   {
