@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 import AddButton from "../components/AddButton";
 import cardMarkup from "./cardMarkup";
-import addButtonMarkup from "../data/addButtonMarkup";
+import IconButtonMarkup from "../data/iconButtonMarkup";
 import Button from "../components/Button";
 import buttonMarkup from "./buttonMarkup";
 import CheckBox from "../components/Checkbox";
@@ -43,7 +43,7 @@ const componentsData = [
         </div>
       </>
     ),
-    markup: addButtonMarkup,
+    markup: IconButtonMarkup,
   },
   {
     name: "AddButton",
@@ -55,7 +55,7 @@ const componentsData = [
         <AddButton rounded="full" />
       </div>
     ),
-    markup: addButtonMarkup,
+    markup: IconButtonMarkup,
   },
   {
     name: "Button",
