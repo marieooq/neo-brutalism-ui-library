@@ -16,9 +16,35 @@ import GearIconButton from "../components/GearIconButton";
 import gearIconButtonMarkup from "./gearIconButtonMarkup";
 import Input from "../components/Input";
 import inputMarkup from "./inputMarkup";
+import IconButton from "../components/IconButton";
+import addIcon from "../assets/add.svg";
+import editIcon from "../assets/edit.svg";
+import gearIcon from "../assets/gear.svg";
 
 const componentsData = [
   { name: "Card", path: "card", component: <Card />, markup: cardMarkup },
+  {
+    name: "IconButton",
+    path: "iconButton",
+    component: (
+      <>
+        <div className="grid grid-cols-3 gap-4">
+          <IconButton icon={addIcon} color="pink" />
+          <IconButton icon={addIcon} color="pink" rounded="md" />
+          <IconButton icon={addIcon} color="pink" rounded="full" />
+
+          <IconButton icon={editIcon} color="cyan" />
+          <IconButton icon={editIcon} color="cyan" rounded="md" />
+          <IconButton icon={editIcon} color="cyan" rounded="full" />
+
+          <IconButton icon={gearIcon} color="lime" />
+          <IconButton icon={gearIcon} color="lime" rounded="md" />
+          <IconButton icon={gearIcon} color="lime" rounded="full" />
+        </div>
+      </>
+    ),
+    markup: addButtonMarkup,
+  },
   {
     name: "AddButton",
     path: "addButton",
