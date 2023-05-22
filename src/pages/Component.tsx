@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import copyIcon from "../assets/copy.svg";
-import logo from "../assets/neo-bg-image.png";
 import Card from "../components/Card";
 import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import cardMarkup from "../data/cardMarkup";
