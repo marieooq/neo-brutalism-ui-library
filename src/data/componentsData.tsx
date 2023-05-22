@@ -76,7 +76,13 @@ const componentsData = [
   {
     name: "Input",
     path: "input",
-    component: <Input />,
+    component: (
+      <div className="w-full flex flex-col space-y-6">
+        <Input />
+        <Input rounded="md" />
+        <Input rounded="full" />
+      </div>
+    ),
     markup: inputMarkup,
   },
 ];
