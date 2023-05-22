@@ -19,7 +19,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-green-200 w-full h-screen snap-start snap-always shrink-0 ">
-        <div className="w-10/12 h-full m-auto py-20 flex justify-between items-center">
+        <div className="px-24 h-full py-20 flex justify-between items-center">
           <div className="flex-1 mr-12">
             <h2 className="text-7xl mb-12 tracking-tight font-bold">
               Check the box that applies to your situation.
@@ -52,7 +52,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-yellow-200 w-full h-screen snap-start snap-always shrink-0 ">
-        <div className="w-10/12 h-full m-auto py-20">
+        <div className="px-24 h-full py-20">
           <h2 className="text-7xl mb-12 tracking-tight font-bold">
             Tailwind based components
           </h2>
@@ -70,7 +70,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-violet-300 w-full h-auto snap-start snap-always shrink-0 ">
-        <div className="w-10/12 h-full m-auto py-20 flex justify-between items-center">
+        <div className="px-24 h-full py-20 flex justify-between items-center">
           <div className="w-2/5 h-full flex flex-col mr-12">
             <div className="w-full">
               <SyntaxHighlighter

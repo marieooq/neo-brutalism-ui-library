@@ -4,7 +4,7 @@ import Button from "./Button";
 const Header = () => {
   return (
     <header className="bg-white h-20 w-full fixed top-0 z-40">
-      <div className="w-10/12 h-full m-auto flex justify-between items-center">
+      <div className="px-24 h-full m-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
           NEO-UI.
         </Link>
