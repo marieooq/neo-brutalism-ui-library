@@ -1,28 +1,35 @@
-import Card from "../components/Card";
-import AddButton from "../components/AddButton";
-import cardMarkup from "./cardMarkup";
-import IconButtonMarkup from "../data/iconButtonMarkup";
-import Button from "../components/Button";
-import buttonMarkup from "./buttonMarkup";
-import CheckBox from "../components/Checkbox";
-import checkboxMarkup from "./checkboxMarkup";
-import Dialog from "../components/Dialog";
-import dialogMarkup from "./dialogMarkup";
-import DropDown from "../components/DropDown";
-import dropdownMarkup from "./dropdownMarkup";
-import EditButton from "../components/EditButton";
-import editButtonMarkup from "./editButtonMarkup";
-import GearIconButton from "../components/GearIconButton";
-import gearIconButtonMarkup from "./gearIconButtonMarkup";
-import Input from "../components/Input";
-import inputMarkup from "./inputMarkup";
-import IconButton from "../components/IconButton";
 import addIcon from "../assets/add.svg";
 import editIcon from "../assets/edit.svg";
 import gearIcon from "../assets/gear.svg";
+import Button from "../components/Button";
+import Card from "../components/Card";
+import CheckBox from "../components/Checkbox";
+import Dialog from "../components/Dialog";
+import DropDown from "../components/DropDown";
+import IconButton from "../components/IconButton";
+import Input from "../components/Input";
+import IconButtonMarkup from "../data/iconButtonMarkup";
+import buttonMarkup from "./buttonMarkup";
+import cardMarkup from "./cardMarkup";
+import checkboxMarkup from "./checkboxMarkup";
+import dialogMarkup from "./dialogMarkup";
+import dropdownMarkup from "./dropdownMarkup";
+import inputMarkup from "./inputMarkup";
 
 const componentsData = [
   { name: "Card", path: "card", component: <Card />, markup: cardMarkup },
+  {
+    name: "Button",
+    path: "button",
+    component: (
+      <div className="flex justify-evenly space-x-6">
+        <Button buttonText="Simple Button" />
+        <Button buttonText="Medium Rounded Button" rounded="md" />
+        <Button buttonText="Full Rounded Button" rounded="full" />
+      </div>
+    ),
+    markup: buttonMarkup,
+  },
   {
     name: "IconButton",
     path: "iconButton",
@@ -46,30 +53,6 @@ const componentsData = [
     markup: IconButtonMarkup,
   },
   {
-    name: "AddButton",
-    path: "addButton",
-    component: (
-      <div className="flex justify-evenly space-x-8">
-        <AddButton />
-        <AddButton rounded="md" />
-        <AddButton rounded="full" />
-      </div>
-    ),
-    markup: IconButtonMarkup,
-  },
-  {
-    name: "Button",
-    path: "button",
-    component: (
-      <div className="flex justify-evenly space-x-6">
-        <Button buttonText="Simple Button" />
-        <Button buttonText="Medium Rounded Button" rounded="md" />
-        <Button buttonText="Full Rounded Button" rounded="full" />
-      </div>
-    ),
-    markup: buttonMarkup,
-  },
-  {
     name: "Checkbox",
     path: "checkbox",
     component: <CheckBox />,
@@ -86,18 +69,6 @@ const componentsData = [
     path: "dropdown",
     component: <DropDown />,
     markup: dropdownMarkup,
-  },
-  {
-    name: "EditButton",
-    path: "editButton",
-    component: <EditButton />,
-    markup: editButtonMarkup,
-  },
-  {
-    name: "GearIconButton",
-    path: "gearIconButton",
-    component: <GearIconButton />,
-    markup: gearIconButtonMarkup,
   },
   {
     name: "Input",
