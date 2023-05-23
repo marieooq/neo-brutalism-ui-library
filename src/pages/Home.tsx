@@ -17,7 +17,7 @@ const Home = () => {
             alt="hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-[60px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
+          <div className="absolute bottom-[120px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
             <Link to="overview">
               <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
                 Get Started
