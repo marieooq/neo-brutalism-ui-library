@@ -2,7 +2,7 @@ import SampleImage from "../assets/neo-brutalism-image3.jpg";
 
 const Card = () => {
   return (
-    <div className="w-full h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
+    <div className="w-80 h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
       <a href="" className="block cursor-pointer">
         <article className="w-full h-full">
           <figure className="w-full h-1/2 border-black border-b-2">
