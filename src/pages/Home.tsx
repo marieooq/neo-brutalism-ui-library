@@ -18,9 +18,9 @@ const Home = () => {
           />
         </div>
       </section>
-      <section className="bg-green-200 w-full h-screen snap-start snap-always shrink-0 ">
-        <div className="px-24 h-full py-20 flex justify-between items-center">
-          <div className="flex-1 mr-12">
+      <section className="bg-green-200 w-full md:h-screen snap-start snap-always shrink-0 ">
+        <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
+          <div className="flex-1 md:mr-12 mb-12 md:mb-0">
             <h2 className="text-7xl mb-12 tracking-tight font-bold">
               Check the box that applies to your situation.
             </h2>
@@ -51,27 +51,27 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-yellow-200 w-full h-screen snap-start snap-always shrink-0 ">
-        <div className="px-24 h-full py-20">
+      <section className="bg-yellow-200 w-full md:h-screen snap-start snap-always shrink-0 ">
+        <div className="px-5 md:px-24 h-full py-20">
           <h2 className="text-7xl mb-12 tracking-tight font-bold">
             Tailwind based components
           </h2>
-          <div className="flex justify-between items-center">
-            <div className="w-[30%]">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="md:w-[30%] mb-12 md:mb-0">
               <Card />
             </div>
-            <div className="w-[30%]">
+            <div className="md:w-[30%] mb-12 md:mb-0">
               <Card />
             </div>
-            <div className="w-[30%]">
+            <div className="md:w-[30%]">
               <Card />
             </div>
           </div>
         </div>
       </section>
       <section className="bg-violet-300 w-full h-auto snap-start snap-always shrink-0 ">
-        <div className="px-24 h-full py-20 flex justify-between items-center">
-          <div className="w-2/5 h-full flex flex-col mr-12">
+        <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
+          <div className="w-full md:w-2/5 md:h-full flex flex-col md:mr-12 mb-12 md:mb-0">
             <div className="w-full">
               <SyntaxHighlighter
                 language="javascript"
@@ -103,7 +103,7 @@ const Home = () => {
             />
           </div> */}
           </div>
-          <div className="w-3/5">
+          <div className="w-full md:w-3/5">
             <h2 className="text-7xl mb-6 tracking-tight font-bold">
               All you have to do is just copy and paste the code!
             </h2>

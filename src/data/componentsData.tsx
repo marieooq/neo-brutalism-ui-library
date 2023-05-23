@@ -17,7 +17,16 @@ import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
 
 const componentsData = [
-  { name: "Card", path: "card", component: <Card />, markup: cardMarkup },
+  {
+    name: "Card",
+    path: "card",
+    component: (
+      <div className="w-80">
+        <Card />
+      </div>
+    ),
+    markup: cardMarkup,
+  },
   {
     name: "Button",
     path: "button",
