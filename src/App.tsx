@@ -10,6 +10,7 @@ import {
   CopiedCodeContext,
   CopiedCodeDispatchContext,
 } from "./context/CopiedCodeContext.js";
+import ScrollToTop from "./utils/ScrollToTop";
 
 export type ACTIONTYPE = { type: "copied" } | { type: "done" };
 
@@ -33,6 +34,7 @@ function App() {
   return (
     <CopiedCodeContext.Provider value={isCopy}>
       <CopiedCodeDispatchContext.Provider value={dispatch}>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
