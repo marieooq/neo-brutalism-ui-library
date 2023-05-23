@@ -5,17 +5,25 @@ import SampleImage from "../assets/neo-brutalism-image3.jpg";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import CheckBoxLarge from "../components/CheckboxLarge";
+import cardMarkup from "../data/cardMarkup";
 
 const Home = () => {
   return (
     <div className="snap-mandatory snap-y overflow-scroll">
       <section className="bg-teal-200 w-full  h-[calc(100vh-80px)] snap-start snap-always shrink-0">
-        <div className="w-full h-full bg-pink-200">
+        <div className="w-full h-full bg-pink-200 relative">
           <img
             src={SampleImage}
             alt="hero"
             className="w-full h-full object-cover"
           />
+          <div className="absolute bottom-[36px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
+            <Link to="overview">
+              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
+                Get Started
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
       <section className="bg-green-200 w-full md:h-screen snap-start snap-always shrink-0 ">
@@ -71,39 +79,18 @@ const Home = () => {
       </section>
       <section className="bg-violet-300 w-full h-auto snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
-          <div className="w-full md:w-2/5 md:h-full flex flex-col md:mr-12 mb-12 md:mb-0">
+          <div className="w-full md:w-6/12 md:h-full flex flex-col md:mr-12 mb-12 md:mb-0">
             <div className="w-full">
               <SyntaxHighlighter
                 language="javascript"
                 style={a11yDark}
                 className="rounded-lg"
               >
-                {` <button
-    className={classNames(
-      "h-12 border-black border-2 p-2.5 bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#00E1EF]",
-      { "rounded-none": rounded === "none" },
-      { "rounded-md": rounded === "md" },
-      { "rounded-full": rounded === "full" },
-      {
-        "border-[#727272] bg-[#D4D4D4] text-[#676767] hover:bg-[#D4D4D4] hover:shadow-none active:bg-[#D4D4D4]":
-          disabled,
-      }
-    )}
-    disabled={disabled}
-  >
-    {buttonText}
-  </button>`}
+                {cardMarkup()}
               </SyntaxHighlighter>
             </div>
-            {/* <div className="flex-1 w-full h-full border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
-            <img
-              src={SampleImage}
-              alt="hero"
-              className="w-full h-full object-cover"
-            />
-          </div> */}
           </div>
-          <div className="w-full md:w-3/5">
+          <div className="w-full md:w-5/12">
             <h2 className="text-7xl mb-6 tracking-tight font-bold">
               All you have to do is just copy and paste the code!
             </h2>

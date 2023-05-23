@@ -1,6 +1,6 @@
 const GettingStarted = () => {
   return (
-    <div className="h-screen">
+    <div>
       <h1 className="font-bold capitalize text-4xl mb-12"> Getting Started</h1>
       <section className="mb-12">
         <h2 className="text-2xl mb-6">
