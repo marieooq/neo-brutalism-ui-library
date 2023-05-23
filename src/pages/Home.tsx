@@ -97,8 +97,8 @@ const Home = () => {
               Elevate your website's visual appeal and leave a lasting
               impression on your audience. Let your creativity shine and create
               a stunning online presence that grabs attention and drives
-              engagement. Experience the difference of our services, all at no
-              cost, and take your web design to the next level!
+              engagement. Experience the difference of services, all at no cost,
+              and take your web design to the next level!
             </p>
             <Link to="overview">
               <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#B8FF9F] hover:bg-[#9dfc7c] active:bg-[#7df752] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
