@@ -17,7 +17,7 @@ const Home = () => {
             alt="hero"
             className="w-full h-full object-cover"
           />
-          <div className="absolute bottom-[36px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
+          <div className="absolute bottom-[60px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
             <Link to="overview">
               <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
                 Get Started
@@ -29,7 +29,7 @@ const Home = () => {
       <section className="bg-green-200 w-full md:h-screen snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
           <div className="flex-1 md:mr-12 mb-12 md:mb-0">
-            <h2 className="text-7xl mb-12 tracking-tight font-bold">
+            <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
               Check the box that applies to your situation.
             </h2>
             <div className="flex mb-4">
@@ -61,7 +61,7 @@ const Home = () => {
       </section>
       <section className="bg-yellow-200 w-full md:h-screen snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20">
-          <h2 className="text-7xl mb-12 tracking-tight font-bold">
+          <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
             Tailwind based components
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center">
@@ -91,7 +91,7 @@ const Home = () => {
             </div>
           </div>
           <div className="w-full md:w-5/12">
-            <h2 className="text-7xl mb-6 tracking-tight font-bold">
+            <h2 className="text-6xl md:text-7xl mb-6 tracking-tight font-bold">
               All you have to do is just copy and paste the code!
             </h2>
             <p className="text-lg mb-12">
