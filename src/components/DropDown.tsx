@@ -9,7 +9,7 @@ const DropDown = () => {
         <div>
           <button
             type="button"
-            className="inline-flex w-full justify-center gap-x-1.5 bg-[#B8FF9F] hover:bg-[#99fc77] px-3 py-2 border-black border-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+            className="inline-flex w-72 justify-center gap-x-1.5 bg-[#B8FF9F] hover:bg-[#99fc77] px-3 py-2 border-black border-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -33,7 +33,7 @@ const DropDown = () => {
 
         <div
           className={classNames(
-            "w-full absolute right-0 z-10 mt-2 w-56 origin-top-right bg-white focus:outline-none shadow-[2px_2px_0px_rgba(0,0,0,1)] border-black border-2 divide-y divide-black",
+            "w-72 absolute right-0 z-10 mt-2 w-56 origin-top-right bg-white focus:outline-none shadow-[2px_2px_0px_rgba(0,0,0,1)] border-black border-2 divide-y divide-black",
             { hidden: !open }
           )}
           role="menu"

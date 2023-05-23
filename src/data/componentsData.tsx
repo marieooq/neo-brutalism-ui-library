@@ -53,18 +53,6 @@ const componentsData = [
     markup: IconButtonMarkup,
   },
   {
-    name: "Checkbox",
-    path: "checkbox",
-    component: <CheckBox />,
-    markup: checkboxMarkup,
-  },
-  {
-    name: "Dialog",
-    path: "dialog",
-    component: <Dialog />,
-    markup: dialogMarkup,
-  },
-  {
     name: "DropDown",
     path: "dropdown",
     component: <DropDown />,
@@ -81,6 +69,18 @@ const componentsData = [
       </div>
     ),
     markup: inputMarkup,
+  },
+  {
+    name: "Checkbox",
+    path: "checkbox",
+    component: <CheckBox />,
+    markup: checkboxMarkup,
+  },
+  {
+    name: "Dialog",
+    path: "dialog",
+    component: <Dialog />,
+    markup: dialogMarkup,
   },
 ];
 
