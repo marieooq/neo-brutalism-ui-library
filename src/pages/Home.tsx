@@ -108,6 +108,18 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <footer className="w-full h-[200px] m-auto flex justify-between items-center px-5 md:px-24 bg-black">
+        <div>
+          <Link to="/" className="text-2xl font-bold text-white">
+            NEO-UI.
+          </Link>
+        </div>
+        <div>
+          <small className="text-white">
+            &copy;{`${new Date().getFullYear()} Marie Otaki`}
+          </small>
+        </div>
+      </footer>
     </div>
   );
 };
