@@ -32,9 +32,9 @@ const componentsData = [
     path: "button",
     component: (
       <div className="flex justify-evenly space-x-6">
-        <Button buttonText="Simple Button" />
-        <Button buttonText="Medium Rounded Button" rounded="md" />
-        <Button buttonText="Full Rounded Button" rounded="full" />
+        <Button buttonText="Rectangular" />
+        <Button buttonText="Medium Rounded" rounded="md" />
+        <Button buttonText="Full Rounded" rounded="full" />
       </div>
     ),
     markup: buttonMarkup,
@@ -62,12 +62,6 @@ const componentsData = [
     markup: IconButtonMarkup,
   },
   {
-    name: "DropDown",
-    path: "dropdown",
-    component: <DropDown />,
-    markup: dropdownMarkup,
-  },
-  {
     name: "Input",
     path: "input",
     component: (
@@ -80,16 +74,23 @@ const componentsData = [
     markup: inputMarkup,
   },
   {
+    name: "Dialog",
+    path: "dialog",
+    component: <Dialog />,
+    markup: dialogMarkup,
+  },
+  {
     name: "Checkbox",
     path: "checkbox",
     component: <CheckBox />,
     markup: checkboxMarkup,
   },
+
   {
-    name: "Dialog",
-    path: "dialog",
-    component: <Dialog />,
-    markup: dialogMarkup,
+    name: "DropDown",
+    path: "dropdown",
+    component: <DropDown />,
+    markup: dropdownMarkup,
   },
 ];
 

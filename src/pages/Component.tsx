@@ -60,7 +60,7 @@ const Component = () => {
               onCopy={onCopy}
               text={displayingComponent?.markup()}
             >
-              <button className="flex items-center h-12 border-black border-2 p-2.5 bg-lime-200 hover:bg-lime-300 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-lime-400">
+              <button className="flex items-center h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]">
                 <img src={copyIcon} alt="coopy" className="w-5 h-5 mr-2" />
                 Copy to clipboard
               </button>
