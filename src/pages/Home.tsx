@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import SampleImage from "../assets/neo-brutalism-image3.jpg";
-import Button from "../components/Button";
 import Card from "../components/Card";
 import CheckBoxLarge from "../components/CheckboxLarge";
 import cardMarkup from "../data/cardMarkup";
@@ -102,7 +101,9 @@ const Home = () => {
               cost, and take your web design to the next level!
             </p>
             <Link to="overview">
-              <Button buttonText="Get Started" />
+              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#B8FF9F] hover:bg-[#9dfc7c] active:bg-[#7df752] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
+                Get Started
+              </button>
             </Link>
           </div>
         </div>

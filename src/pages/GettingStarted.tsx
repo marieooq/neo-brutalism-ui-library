@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import CheckBox from "../components/Checkbox";
+
 const GettingStarted = () => {
   return (
     <div>
@@ -10,7 +13,7 @@ const GettingStarted = () => {
         </h2>
         <div className="mb-8">
           <div className="mb-4 leading-relaxed flex">
-            <span className="w-6 h-4 bg-pink-400 rounded-full border-black border-2"></span>
+            <CheckBox />
             <p className="ml-2 -mt-1.5 align-top">
               <strong>Dazzling Eye-Catching Design:</strong> Ignite your website
               with a burst of vibrant colors and bold shapes. Our library offers
@@ -19,7 +22,7 @@ const GettingStarted = () => {
             </p>
           </div>
           <div className="mb-4 leading-relaxed flex">
-            <span className="w-6 h-4 bg-pink-400 rounded-full border-black border-2"></span>
+            <CheckBox />
             <p className="ml-2 -mt-1.5 align-top">
               <strong>Powered by Tailwind CSS:</strong> Harness the power of
               Tailwind CSS, the industry-leading framework for rapid UI
@@ -29,7 +32,7 @@ const GettingStarted = () => {
             </p>
           </div>
           <div className="leading-relaxed flex">
-            <span className="w-6 h-4 bg-pink-400 rounded-full border-black border-2"></span>
+            <CheckBox />
             <p className="ml-2  -mt-1.5 align-top">
               <strong>Completely Free:</strong> Yes, you read that right! Our
               Neo-Brutalism UI library is absolutely free. Enhance your webpages
@@ -48,6 +51,11 @@ const GettingStarted = () => {
             Don't miss out on this opportunity to elevate your web design game.
           </p>
         </div>
+        <Link to="/components/card" className="flex justify-end">
+          <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#A8A6FF] hover:bg-[#918efa] active:bg-[#807dfa] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
+            Browse Components
+          </button>
+        </Link>
       </section>
     </div>
   );
