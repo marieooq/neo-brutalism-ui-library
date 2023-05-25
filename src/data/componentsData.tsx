@@ -32,9 +32,9 @@ const componentsData = [
     path: "button",
     component: (
       <div className="flex justify-evenly space-x-6">
-        <Button buttonText="Rectangular" />
-        <Button buttonText="Medium Rounded" rounded="md" />
-        <Button buttonText="Full Rounded" rounded="full" />
+        <Button buttonText="Button" />
+        <Button buttonText="Button" rounded="md" />
+        <Button buttonText="Button" rounded="full" />
       </div>
     ),
     markup: buttonMarkup,

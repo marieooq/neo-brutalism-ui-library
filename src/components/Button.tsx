@@ -14,7 +14,7 @@ const Button = ({
   return (
     <button
       className={classNames(
-        "h-12 border-black border-2 p-2.5 bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#53f2fc]",
+        "h-12 border-black border-2 py-2.5 px-5 bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#53f2fc]",
         { "rounded-none": rounded === "none" },
         { "rounded-md": rounded === "md" },
         { "rounded-full": rounded === "full" },
