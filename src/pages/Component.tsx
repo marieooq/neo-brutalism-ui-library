@@ -70,7 +70,6 @@ const Component = () => {
             <SyntaxHighlighter
               language="javascript"
               style={a11yDark}
-              wrapLongLines={true}
               lineProps={{ style: { flexWrap: "wrap" } }}
             >
               {displayingComponent?.markup()}
