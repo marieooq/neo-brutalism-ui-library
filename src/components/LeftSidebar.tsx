@@ -13,7 +13,15 @@ const LeftSidebar = () => {
             <label className="text-lg font-bold block mb-4">
               Getting started
             </label>
-            <li className="inliine-block hover:underline hover:underline-offset-8 mb-4">
+            <li
+              className={classNames(
+                "inliine-block hover:underline hover:underline-offset-8 mb-4",
+                {
+                  "font-bold underline underline-offset-8":
+                    location.pathname.includes("overview"),
+                }
+              )}
+            >
               <Link to={"/overview"}>Overview</Link>
             </li>
           </div>
