@@ -23,7 +23,7 @@ const Header = () => {
               <Link to="/components/card">Components</Link>
             </li>
             <li>
-              <Link to="overview">
+              <Link to="/overview">
                 <Button buttonText="Get Started" />
               </Link>
             </li>

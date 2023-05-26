@@ -1,9 +1,10 @@
 import SampleImage from "../assets/neo-brutalism-image3.jpg";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
     <div className="w-full h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
-      <a href="" className="block cursor-pointer">
+      <Link to="/overview">
         <article className="w-full h-full">
           <figure className="w-full h-1/2 border-black border-b-2">
             <img
@@ -24,10 +25,10 @@ const Card = () => {
               also be used in print design, with an example being a bold shape
               with a vibrant color fill applied to it.
             </p>
-            <strong>Read More</strong>
+            <strong>Get Started</strong>
           </div>
         </article>
-      </a>
+      </Link>
     </div>
   );
 };
