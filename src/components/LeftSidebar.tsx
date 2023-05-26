@@ -1,7 +1,10 @@
-import { Link, Outlet } from "react-router-dom";
+import classNames from "classnames";
+import { Link, Outlet, useLocation } from "react-router-dom";
 import componentsData from "../data/componentsData.js";
 
 const LeftSidebar = () => {
+  const location = useLocation();
+  console.log(location.pathname);
   return (
     <section className="w-full flex">
       <div className="hidden md:block bg-yellow-200 fixed top-20 left-0 w-[360px] h-screen overflow-y-scroll p-24">
@@ -19,7 +22,13 @@ const LeftSidebar = () => {
             {componentsData.map((obj, index) => {
               return (
                 <li
-                  className="inliine-block hover:underline hover:underline-offset-8 mb-4"
+                  className={classNames(
+                    "inliine-block hover:underline hover:underline-offset-8 mb-4",
+                    {
+                      "font-bold underline underline-offset-8":
+                        location.pathname.includes(obj.path),
+                    }
+                  )}
                   key={index}
                 >
                   <Link to={`/components/${obj.path}`}>{obj.name}</Link>
