@@ -4,7 +4,6 @@ import componentsData from "../data/componentsData.js";
 
 const LeftSidebar = () => {
   const location = useLocation();
-  console.log(location.pathname);
   return (
     <section className="w-full flex">
       <div className="hidden md:block bg-yellow-200 fixed top-20 left-0 w-[360px] h-screen overflow-y-scroll p-24">
