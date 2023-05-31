@@ -56,3 +56,10 @@ export const Large: Story = {
     size: "lg",
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    buttonText: "button",
+    disabled: true,
+  },
+};
