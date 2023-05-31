@@ -29,22 +29,30 @@ export const Rounded: Story = {
   },
 };
 
-// export const Secondary: Story = {
-//   args: {
-//     label: "Button",
-//   },
-// };
+export const FullRounded: Story = {
+  args: {
+    buttonText: "button",
+    rounded: "full",
+  },
+};
 
-// export const Large: Story = {
-//   args: {
-//     size: "large",
-//     label: "Button",
-//   },
-// };
+export const Small: Story = {
+  args: {
+    buttonText: "button",
+    size: "sm",
+  },
+};
 
-// export const Small: Story = {
-//   args: {
-//     size: "small",
-//     label: "Button",
-//   },
-// };
+export const Medium: Story = {
+  args: {
+    buttonText: "button",
+    size: "md",
+  },
+};
+
+export const Large: Story = {
+  args: {
+    buttonText: "button",
+    size: "lg",
+  },
+};
