@@ -8,12 +8,12 @@ export default {
           100: "#A5B4FB",
           200: "#A8A6FF",
           300: "#918efa",
-          400: "#f774ea",
+          400: "#807dfa",
         },
         pink: {
           200: "#FFA6F6",
           300: "#fa8cef",
-          400: "#FFE500",
+          400: "#fa7fee",
         },
         red: {
           200: "#FF9F9F",

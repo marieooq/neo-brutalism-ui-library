@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-type IconButtonType = {
+type IconButttonType = {
   size?: "lg" | "md" | "sm";
   rounded?: "none" | "md" | "full";
   icon: string;
@@ -12,34 +12,38 @@ const IconButton = ({
   rounded = "none",
   icon,
   color = "cyan",
-}: IconButtonType) => {
+}: IconButttonType) => {
   return (
     <button
       className={classNames(
-        "border-black border-2",
+        `border-black border-2 rounded`,
         {
-          "bg-violet-200 hover:bg-violet-300 active:bg-violet-400":
+          "bg-[#A8A6FF] hover:bg-[#918efa] active:bg-[#807dfa]":
             color === "violet",
         },
         {
-          "bg-pink-200 hover:bg-pink-300 active:bg-pink-400": color === "pink",
+          "bg-[#FFA6F6] hover:bg-[#fa8cef] active:bg-[#f774ea]":
+            color === "pink",
         },
         {
-          "bg-red-200 hover:bg-red-300 active:bg-red-400": color === "red",
+          "bg-[#FF9F9F] hover:bg-[#fa7a7a] active:bg-[#f76363]":
+            color === "red",
         },
         {
-          "bg-orange-200 hover:bg-orange-300 active:bg-orange-400":
+          "bg-[#FFC29F] hover:bg-[#FF965B] active:bg-[#fa8543]":
             color === "orange",
         },
         {
-          "bg-yellow-200 hover:bg-yellow-300 active:bg-yellow-400":
+          "bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500]":
             color === "yellow",
         },
         {
-          "bg-lime-200 hover:bg-lime-300 active:bg-lime-400": color === "lime",
+          "bg-[#B8FF9F] hover:bg-[#9dfc7c] active:bg-[#7df752]":
+            color === "lime",
         },
         {
-          "bg-cyan-200 hover:bg-cyan-300 active:bg-cyan-400": color === "cyan",
+          "bg-[#A6FAFF] hover:bg-[#79F7FF] active:bg-[#53f2fc]":
+            color === "cyan",
         },
         {
           "w-10 h-10 p-2 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]":
@@ -50,7 +54,7 @@ const IconButton = ({
             size === "md",
         },
         {
-          "w-24 h-24 p-9 hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]":
+          "w-24 h-24 p-9  hover:shadow-[8px_8px_0px_rgba(0,0,0,1)]":
             size === "lg",
         },
         { "rounded-none": rounded === "none" },
