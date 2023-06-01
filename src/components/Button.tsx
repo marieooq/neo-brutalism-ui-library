@@ -4,6 +4,7 @@ type ButtonType = {
   buttonText: string;
   rounded?: "none" | "md" | "full";
   size?: "sm" | "md" | "lg";
+  color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
   disabled?: boolean;
 };
 
@@ -11,12 +12,42 @@ const Button = ({
   buttonText = "Enabled",
   rounded = "none",
   size = "md",
+  color = "cyan",
   disabled,
 }: ButtonType) => {
   return (
     <button
       className={classNames(
-        "border-black border-2  bg-[#A6FAFF] hover:bg-[#79F7FF] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)] active:bg-[#53f2fc]",
+        "border-black border-2",
+
+        {
+          "bg-violet-200 hover:bg-violet-300 active:bg-violet-400":
+            color === "violet" && !disabled,
+        },
+        {
+          "bg-pink-200 hover:bg-pink-300 active:bg-pink-400":
+            color === "pink" && !disabled,
+        },
+        {
+          "bg-red-200 hover:bg-red-300 active:bg-red-400":
+            color === "red" && !disabled,
+        },
+        {
+          "bg-orange-200 hover:bg-orange-300 active:bg-orange-400":
+            color === "orange" && !disabled,
+        },
+        {
+          "bg-yellow-200 hover:bg-yellow-300 active:bg-yellow-400":
+            color === "yellow" && !disabled,
+        },
+        {
+          "bg-lime-200 hover:bg-lime-300 active:bg-lime-400":
+            color === "lime" && !disabled,
+        },
+        {
+          "bg-cyan-200 hover:bg-cyan-300 active:bg-cyan-400":
+            color === "cyan" && !disabled,
+        },
         { "rounded-none": rounded === "none" },
         { "rounded-md": rounded === "md" },
         { "rounded-full": rounded === "full" },

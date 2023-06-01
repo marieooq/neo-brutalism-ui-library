@@ -24,42 +24,91 @@ export const Primary: Story = {
 
 export const Rounded: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     rounded: "md",
   },
 };
 
 export const FullRounded: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     rounded: "full",
   },
 };
 
 export const Small: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     size: "sm",
   },
 };
 
 export const Medium: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     size: "md",
   },
 };
 
 export const Large: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     size: "lg",
   },
 };
 
 export const Disabled: Story = {
   args: {
-    buttonText: "button",
+    ...Primary.args,
     disabled: true,
+  },
+};
+
+export const Violet: Story = {
+  args: {
+    ...Primary.args,
+    color: "violet",
+  },
+};
+
+export const Pink: Story = {
+  args: {
+    ...Primary.args,
+    color: "pink",
+  },
+};
+
+export const Red: Story = {
+  args: {
+    ...Primary.args,
+    color: "red",
+  },
+};
+
+export const Orange: Story = {
+  args: {
+    ...Primary.args,
+    color: "orange",
+  },
+};
+
+export const Yellow: Story = {
+  args: {
+    ...Primary.args,
+    color: "yellow",
+  },
+};
+
+export const Lime: Story = {
+  args: {
+    ...Primary.args,
+    color: "lime",
+  },
+};
+
+export const Cyan: Story = {
+  args: {
+    ...Primary.args,
+    color: "cyan",
   },
 };

@@ -44,49 +44,56 @@ export const FullRounded: Story = {
   },
 };
 
-export const VioletButton: Story = {
+export const Disabled: Story = {
+  args: {
+    ...Primary.args,
+    disabled: true,
+  },
+};
+
+export const Violet: Story = {
   args: {
     ...FullRounded.args,
     color: "violet",
   },
 };
 
-export const PinkButton: Story = {
+export const Pink: Story = {
   args: {
     ...FullRounded.args,
     color: "pink",
   },
 };
 
-export const RedButton: Story = {
+export const Red: Story = {
   args: {
     ...FullRounded.args,
     color: "red",
   },
 };
 
-export const OrangeButton: Story = {
+export const Orange: Story = {
   args: {
     ...FullRounded.args,
     color: "orange",
   },
 };
 
-export const YellowButton: Story = {
+export const Yellow: Story = {
   args: {
     ...FullRounded.args,
     color: "yellow",
   },
 };
 
-export const LimeButton: Story = {
+export const Lime: Story = {
   args: {
     ...FullRounded.args,
     color: "lime",
   },
 };
 
-export const CyanButton: Story = {
+export const Cyan: Story = {
   args: {
     ...FullRounded.args,
     color: "cyan",
