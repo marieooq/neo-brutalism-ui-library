@@ -3,7 +3,7 @@ import gearIcon from "../assets/gear.svg";
 import IconButton from "../components/IconButton";
 
 const meta = {
-  title: "Example/IconButton",
+  title: "Components/IconButton",
   component: IconButton,
 } satisfies Meta<typeof IconButton>;
 
