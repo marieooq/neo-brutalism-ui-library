@@ -76,7 +76,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-violet-300 w-full h-auto snap-start snap-always shrink-0 ">
+      <section className="bg-violet-100 w-full h-auto snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
           <div className="w-full md:w-6/12 md:h-full flex flex-col md:mr-12 mb-12 md:mb-0">
             <div className="w-full">
