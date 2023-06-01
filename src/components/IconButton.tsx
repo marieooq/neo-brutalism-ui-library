@@ -4,7 +4,7 @@ type IconButtonType = {
   size?: "lg" | "md" | "sm";
   rounded?: "none" | "md" | "full";
   icon: string;
-  color: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
+  color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
 };
 
 const IconButton = ({
