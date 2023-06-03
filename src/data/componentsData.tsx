@@ -79,10 +79,10 @@ const componentsData = [
     name: "Input",
     path: "input",
     component: (
-      <div className="w-full flex flex-col space-y-6">
-        <Input />
-        <Input rounded="md" />
-        <Input rounded="full" />
+      <div className="w-96 flex flex-col space-y-6">
+        <Input placeholder="you@example.com" />
+        <Input placeholder="you@example.com" rounded="md" />
+        <Input placeholder="you@example.com" rounded="full" />
       </div>
     ),
     markup: inputMarkup,
