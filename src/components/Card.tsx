@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 
 type CardType = {
@@ -19,7 +18,7 @@ const Card = ({
   calllToActionLink,
 }: CardType) => {
   return (
-    <div className="w-full h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
+    <div className="w-full max-w-2xl h-full border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
       <Link to={calllToActionLink}>
         <article className="w-full h-full">
           <figure className="w-full h-1/2 border-black border-b-2">
