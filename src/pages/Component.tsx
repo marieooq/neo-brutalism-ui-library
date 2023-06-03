@@ -8,6 +8,7 @@ import Card from "../components/Card";
 import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import cardMarkup from "../data/cardMarkup";
 import componentsData from "../data/componentsData";
+import SampleImage from "../assets/neo-brutalism-image3.jpg";
 
 type displayingComponentType = {
   name: string;
@@ -21,7 +22,22 @@ const Component = () => {
     useState<displayingComponentType>({
       name: "Card",
       path: "card",
-      component: <Card />,
+      component: (
+        <Card
+          thumbnail={SampleImage}
+          date="June 15th, 2023"
+          title="Neo Brutallism"
+          description="Neobrutalism is an aesthetic characterized by high contrast
+              elements, bright colors, and bold shapes. It is often used to make
+              a statement, as it is meant to be eye-catching and stand out to
+              the viewer. It is also used in user interface and web design, with
+              features such as vibrant colors and bold shapes. Neobrutalism can
+              also be used in print design, with an example being a bold shape
+              with a vibrant color fill applied to it."
+          callToActionText="Get Started"
+          calllToActionLink="/overview"
+        />
+      ),
       markup: cardMarkup,
     });
   const dispatch = useContext(CopiedCodeDispatchContext);

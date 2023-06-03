@@ -65,13 +65,52 @@ const Home = () => {
           </h2>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-[30%] mb-12 md:mb-0">
-              <Card />
+              <Card
+                thumbnail={SampleImage}
+                date="June 15th, 2023"
+                title="Neo Brutallism"
+                description="Neobrutalism is an aesthetic characterized by high contrast
+              elements, bright colors, and bold shapes. It is often used to make
+              a statement, as it is meant to be eye-catching and stand out to
+              the viewer. It is also used in user interface and web design, with
+              features such as vibrant colors and bold shapes. Neobrutalism can
+              also be used in print design, with an example being a bold shape
+              with a vibrant color fill applied to it."
+                callToActionText="Get Started"
+                calllToActionLink="/overview"
+              />
             </div>
             <div className="md:w-[30%] mb-12 md:mb-0">
-              <Card />
+              <Card
+                thumbnail={SampleImage}
+                date="June 15th, 2023"
+                title="Neo Brutallism"
+                description="Neobrutalism is an aesthetic characterized by high contrast
+              elements, bright colors, and bold shapes. It is often used to make
+              a statement, as it is meant to be eye-catching and stand out to
+              the viewer. It is also used in user interface and web design, with
+              features such as vibrant colors and bold shapes. Neobrutalism can
+              also be used in print design, with an example being a bold shape
+              with a vibrant color fill applied to it."
+                callToActionText="Get Started"
+                calllToActionLink="/overview"
+              />
             </div>
             <div className="md:w-[30%]">
-              <Card />
+              <Card
+                thumbnail={SampleImage}
+                date="June 15th, 2023"
+                title="Neo Brutallism"
+                description="Neobrutalism is an aesthetic characterized by high contrast
+              elements, bright colors, and bold shapes. It is often used to make
+              a statement, as it is meant to be eye-catching and stand out to
+              the viewer. It is also used in user interface and web design, with
+              features such as vibrant colors and bold shapes. Neobrutalism can
+              also be used in print design, with an example being a bold shape
+              with a vibrant color fill applied to it."
+                callToActionText="Get Started"
+                calllToActionLink="/overview"
+              />
             </div>
           </div>
         </div>

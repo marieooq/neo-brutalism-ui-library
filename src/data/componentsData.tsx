@@ -15,6 +15,7 @@ import checkboxMarkup from "./checkboxMarkup";
 import dialogMarkup from "./dialogMarkup";
 import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
+import SampleImage from "../assets/neo-brutalism-image3.jpg";
 
 const componentsData = [
   {
@@ -22,7 +23,20 @@ const componentsData = [
     path: "card",
     component: (
       <div className="w-80">
-        <Card />
+        <Card
+          thumbnail={SampleImage}
+          date="June 15th, 2023"
+          title="Neo Brutallism"
+          description="Neobrutalism is an aesthetic characterized by high contrast
+              elements, bright colors, and bold shapes. It is often used to make
+              a statement, as it is meant to be eye-catching and stand out to
+              the viewer. It is also used in user interface and web design, with
+              features such as vibrant colors and bold shapes. Neobrutalism can
+              also be used in print design, with an example being a bold shape
+              with a vibrant color fill applied to it."
+          callToActionText="Get Started"
+          calllToActionLink="/overview"
+        />
       </div>
     ),
     markup: cardMarkup,
