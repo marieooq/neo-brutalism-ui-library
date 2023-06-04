@@ -6,7 +6,7 @@ type CheckBoxType = {
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
 };
 
-const CheckBox = ({ color = "orange", size = "sm" }: CheckBoxType) => {
+const Checkbox = ({ color = "orange", size = "sm" }: CheckBoxType) => {
   const [checked, setChecked] = useState(false);
   return (
     <>
@@ -58,4 +58,4 @@ const CheckBox = ({ color = "orange", size = "sm" }: CheckBoxType) => {
   );
 };
 
-export default CheckBox;
+export default Checkbox;

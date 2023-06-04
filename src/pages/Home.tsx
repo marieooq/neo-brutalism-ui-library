@@ -3,7 +3,7 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import SampleImage from "../assets/neo-brutalism-image3.jpg";
 import Card from "../components/Card";
-import CheckBoxLarge from "../components/CheckboxLarge";
+import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
 
 const Home = () => {
@@ -32,17 +32,17 @@ const Home = () => {
               Check the box that applies to your situation.
             </h2>
             <div className="flex mb-4">
-              <CheckBoxLarge />
+              <Checkbox size="lg" />
               <p className="text-2xl ml-3">I want to build cool UIs.</p>
             </div>
             <div className="flex  mb-4">
-              <CheckBoxLarge />
+              <Checkbox size="lg" />
               <p className="text-2xl ml-3">
                 However, I don't want to spend too much time.
               </p>
             </div>
             <div className="flex">
-              <CheckBoxLarge />
+              <Checkbox size="lg" />
               <p className="text-2xl ml-3">
                 I am familiar with Tailwind CSS or I want to make the most out
                 of it.

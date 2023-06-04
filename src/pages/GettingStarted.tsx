@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CheckBox from "../components/Checkbox";
+import Checkbox from "../components/Checkbox";
 
 const GettingStarted = () => {
   return (
@@ -13,7 +13,7 @@ const GettingStarted = () => {
         </h2>
         <div className="mb-8">
           <div className="mb-4 leading-relaxed flex">
-            <CheckBox />
+            <Checkbox />
             <p className="ml-2 -mt-1.5 align-top">
               <strong>Dazzling Eye-Catching Design:</strong> Ignite your website
               with a burst of vibrant colors and bold shapes. This library
@@ -22,7 +22,7 @@ const GettingStarted = () => {
             </p>
           </div>
           <div className="mb-4 leading-relaxed flex">
-            <CheckBox />
+            <Checkbox />
             <p className="ml-2 -mt-1.5 align-top">
               <strong>Powered by Tailwind CSS:</strong> Harness the power of
               Tailwind CSS, the industry-leading framework for rapid UI
@@ -43,7 +43,7 @@ const GettingStarted = () => {
             </p>
           </div>
           <div className="leading-relaxed flex">
-            <CheckBox />
+            <Checkbox />
             <p className="ml-2  -mt-1.5 align-top">
               <strong>Completely Free:</strong> Yes, you read that right!
               Neo-Brutalism UI library is absolutely free. Enhance your webpages

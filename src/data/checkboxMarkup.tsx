@@ -3,7 +3,7 @@ const checkboxMarkup = (): string => {
   import classNames from "classnames";
 import { useState } from "react";
 
-const CheckBox = () => {
+const Checkbox = () => {
   const [checked, setChecked] = useState(false);
   return (
     <>
@@ -23,7 +23,7 @@ const CheckBox = () => {
   );
 };
 
-export default CheckBox;
+export default Checkbox;
 
   `;
 };

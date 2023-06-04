@@ -3,7 +3,7 @@ import editIcon from "../assets/edit.svg";
 import gearIcon from "../assets/gear.svg";
 import Button from "../components/Button";
 import Card from "../components/Card";
-import CheckBox from "../components/Checkbox";
+import Checkbox from "../components/Checkbox";
 import Dialog from "../components/Dialog";
 import DropDown from "../components/DropDown";
 import IconButton from "../components/IconButton";
@@ -102,7 +102,7 @@ const componentsData = [
   {
     name: "Checkbox",
     path: "checkbox",
-    component: <CheckBox />,
+    component: <Checkbox />,
     markup: checkboxMarkup,
   },
 
