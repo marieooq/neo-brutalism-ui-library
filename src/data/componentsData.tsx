@@ -90,7 +90,13 @@ const componentsData = [
   {
     name: "Dialog",
     path: "dialog",
-    component: <Dialog />,
+    component: (
+      <Dialog
+        message="The message you want goes in here."
+        actionButtonText="Enabled"
+        cancelButtonText="Cancel"
+      />
+    ),
     markup: dialogMarkup,
   },
   {
