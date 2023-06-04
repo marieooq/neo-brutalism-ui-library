@@ -1,7 +1,13 @@
-import classNames from "classnames";
 import { useState } from "react";
+import classNames from "classnames";
+import { Link } from "react-router-dom";
 
-const DropDown = () => {
+type DropdownType = {
+  title: string;
+  list: { to: string; name: string }[];
+};
+
+const Dropdown = ({ title, list }: DropdownType) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -15,7 +21,7 @@ const DropDown = () => {
             aria-haspopup="true"
             onClick={() => setOpen(!open)}
           >
-            Options
+            {title}
             <svg
               className="mt-1 h-5 w-5"
               viewBox="0 0 20 20"
@@ -41,41 +47,19 @@ const DropDown = () => {
           aria-labelledby="menu-button"
         >
           <div role="none">
-            <a
-              href=""
-              className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
-              role="menuitem"
-              id="menu-item-0"
-            >
-              Account settings
-            </a>
-            <a
-              href=""
-              className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
-              role="menuitem"
-              id="menu-item-1"
-            >
-              Support
-            </a>
-            <a
-              href=""
-              className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
-              role="menuitem"
-              id="menu-item-2"
-            >
-              License
-            </a>
-            <form method="POST" action="#" role="none">
-              <button
-                type="submit"
-                className="block w-full px-4 py-2 text-left text-sm hover:bg-[#B8FF9F] hover:font-medium"
-                role="menuitem"
-                // tabindex="-1"
-                id="menu-item-3"
-              >
-                Sign out
-              </button>
-            </form>
+            {list.map((item, index) => {
+              return (
+                <Link
+                  to={item.to}
+                  className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
+                  role="menuitem"
+                  id={`menu-item-${index}`}
+                  key={index}
+                >
+                  {item.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -83,4 +67,4 @@ const DropDown = () => {
   );
 };
 
-export default DropDown;
+export default Dropdown;
