@@ -13,6 +13,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {};
 
+export const Large: Story = { args: { size: "lg" } };
+
 export const Violet: Story = { args: { color: "violet" } };
 
 export const Pink: Story = { args: { color: "pink" } };
