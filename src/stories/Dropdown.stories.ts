@@ -1,12 +1,12 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-react-router-v6";
-import Dropdown from "../components/Dropdown";
+import DropDown from "../components/DropDown";
 
 const meta = {
-  title: "Components/Dropdown",
-  component: Dropdown,
+  title: "Components/DropDown",
+  component: DropDown,
   decorators: [withRouter],
-} satisfies Meta<typeof Dropdown>;
+} satisfies Meta<typeof DropDown>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

@@ -3,7 +3,7 @@ const dropdownMarkup = (): string => {
   import classNames from "classnames";
 import { useState } from "react";
 
-const Dropdown = () => {
+const DropDown = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -85,7 +85,7 @@ const Dropdown = () => {
   );
 };
 
-export default Dropdown;
+export default DropDown;
 
 
   `;

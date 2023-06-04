@@ -8,7 +8,7 @@ type DropdownType = {
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
 };
 
-const Dropdown = ({ title, list, color = "lime" }: DropdownType) => {
+const DropDown = ({ title, list, color = "lime" }: DropdownType) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -87,4 +87,4 @@ const Dropdown = ({ title, list, color = "lime" }: DropdownType) => {
   );
 };
 
-export default Dropdown;
+export default DropDown;

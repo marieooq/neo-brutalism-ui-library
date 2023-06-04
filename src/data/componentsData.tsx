@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import Card from "../components/Card";
 import Checkbox from "../components/Checkbox";
 import Dialog from "../components/Dialog";
-import Dropdown from "../components/Dropdown";
+import DropDown from "../components/DropDown";
 import IconButton from "../components/IconButton";
 import Input from "../components/Input";
 import IconButtonMarkup from "../data/iconButtonMarkup";
@@ -107,10 +107,10 @@ const componentsData = [
   },
 
   {
-    name: "Dropdown",
+    name: "DropDown",
     path: "dropdown",
     component: (
-      <Dropdown
+      <DropDown
         title="Options"
         list={[
           { to: "#", name: "Account settings" },
