@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 type DropdownType = {
   title: string;
   list: { to: string; name: string }[];
+  color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
 };
 
-const Dropdown = ({ title, list }: DropdownType) => {
+const Dropdown = ({ title, list, color = "lime" }: DropdownType) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -15,7 +16,16 @@ const Dropdown = ({ title, list }: DropdownType) => {
         <div>
           <button
             type="button"
-            className="inline-flex w-72 justify-center gap-x-1.5 bg-[#B8FF9F] hover:bg-[#99fc77] px-3 py-2 border-black border-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)]"
+            className={classNames(
+              "inline-flex w-72 justify-center gap-x-1.5 px-3 py-2 border-black border-2 focus:outline-none focus:shadow-[2px_2px_0px_rgba(0,0,0,1)]",
+              { "bg-violet-200 hover:bg-violet-300": color === "violet" },
+              { "bg-pink-200 hover:bg-pink-300": color === "pink" },
+              { "bg-red-200 hover:bg-red-300": color === "red" },
+              { "bg-orange-200 hover:bg-orange-300": color === "orange" },
+              { "bg-yellow-200 hover:bg-yellow-300": color === "yellow" },
+              { "bg-lime-200 hover:bg-lime-300": color === "lime" },
+              { "bg-cyan-200 hover:bg-cyan-300": color === "cyan" }
+            )}
             id="menu-button"
             aria-expanded="true"
             aria-haspopup="true"
@@ -51,7 +61,17 @@ const Dropdown = ({ title, list }: DropdownType) => {
               return (
                 <Link
                   to={item.to}
-                  className="block px-4 py-2 text-sm border-black border-b-2 hover:bg-[#B8FF9F] hover:font-medium"
+                  className={classNames(
+                    "block px-4 py-2 text-sm border-black border-b-2 hover:font-medium",
+                    { "hover:bg-violet-200": color === "violet" },
+                    { "hover:bg-pink-200": color === "pink" },
+                    { "hover:bg-red-200": color === "red" },
+                    { "hover:bg-orange-200": color === "orange" },
+                    { "hover:bg-yellow-200": color === "yellow" },
+                    { "hover:bg-yellow-200": color === "yellow" },
+                    { "hover:bg-lime-200": color === "lime" },
+                    { "hover:bg-cyan-200": color === "cyan" }
+                  )}
                   role="menuitem"
                   id={`menu-item-${index}`}
                   key={index}
