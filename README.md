@@ -85,6 +85,9 @@ Your contributions are always welcome! Make a PR if you have any suggestions!:sm
 <a href="https://storybook.js.org/" target="_blank">
   <img width="50" alt="storybook-logo" src="./public/storybook-icon.svg" />
 </a>
+<a href="https://vitejs.dev/" target="_blank">
+  <img width="50" alt="vitejs-logo" src="./public/vitejs.svg" />
+</a>
 </div>
 
 # License
