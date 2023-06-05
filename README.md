@@ -1,6 +1,6 @@
 # Neo-Brutalism UI Library
 
-Neo-brutalism UI is a collection of Tailwind CSS-based components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages, allowing designers to create striking interfaces.
+[Neo-brutalism UI](https://neo-brutalism-ui-library.vercel.app/) is a collection of [Tailwind CSS-based](https://tailwindcss.com/) components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages, allowing designers to create striking interfaces.
 
 ## Demo screen recording
 
@@ -17,15 +17,16 @@ Neo-brutalism UI is a collection of Tailwind CSS-based components that embody a 
 
 # Usage
 
-## 1. For React users, clone this repository and use Storybook
+## 1. For React users: Clone this repository and use Storybook
 
 ![storybook-gif](./public/neo-brutalism-storybook-demo.png)
-1. Colone the repository and run `yarn && yarn storybook` at the root of it. 
+
+1. Clone the repository and run `yarn && yarn storybook` at the root of it.
 2. All the components are listed on the left side of the storybook, allowing you to quickly see how they work and check the component's accepted props.
 3. Feel free to copy the code of the components to your project!
 4. If you also want to run the app, run `yarn run dev`.
 
-## 2. Easiest: Visit the Neo-Brutalism UI website
+## 2. Easier way: Visit the Neo-Brutalism UI website
 
 1. Visit [Neo-Brutalism UI website](https://neo-brutalism-ui-library.vercel.app/), and navigate to the components page.
 2. Simply copy and paste the desired code snippet.
@@ -33,6 +34,7 @@ Neo-brutalism UI is a collection of Tailwind CSS-based components that embody a 
    Reference:[Demo screen recording](#demo-screen-recording)
 
 ## Note
+
 Material Design Icons are used in the components. You can download the icons [here](https://www.figma.com/community/plugin/740272380439725040/Material-Design-Icons).
 
 # Configurations
@@ -69,15 +71,27 @@ Material Design Icons are used in the components. You can download the icons [he
 Your contributions are always welcome! Make a PR if you have any suggestions!:smile:
 
 # Technologies
-[![react](./public/react.svg)](https://react.dev/)
-[![typescript](./public/typescript-icon.svg)](https://www.typescriptlang.org/)
-[![tailwind css](./public/tailwindcss-icon.svg)](https://tailwindcss.com/)
-[![storybook](./public/storybook-icon.svg)](https://storybook.js.org/)
 
+<div align="center">
+<a href="https://react.dev/" target="_blank">
+  <img width="70" alt="react-logo" src="./public/react.svg" />
+</a>
+<a href="https://www.typescriptlang.org/" target="_blank">
+  <img width="70" alt="typescript-logo" src="./public/typescript-icon.svg" />
+</a>
+<a href="https://tailwindcss.com/" target="_blank">
+  <img width="70" alt="tailwind-css-logo" src="./public/tailwindcss-icon.svg" />
+</a>
+<a href="https://storybook.js.org/" target="_blank">
+  <img width="70" alt="storybook-logo" src="./public/storybook-icon.svg" />
+</a>
+</div>
 
 # License
+
 The MIT License
 
 # Acknowledgement
+
 This project is inspired by [Neo-Brutalism UI Kit](https://www.figma.com/community/file/1209478811951634271).
 Huge thanks to [Muhamad Digdaya](https://www.figma.com/@muhamaddigdaya)!!!:star_struck:
