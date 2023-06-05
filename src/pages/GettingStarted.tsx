@@ -7,8 +7,8 @@ const GettingStarted = () => {
       <h1 className="font-bold capitalize text-4xl mb-12"> Getting Started</h1>
       <section className="mb-12">
         <h2 className="text-2xl mb-6">
-          Get ready to revolutionize your web design with our Neo-Brutalism UI
-          library, the ultimate solution for creating stunning webpages. Here's
+          Get ready to revolutionize your web design with Neo-Brutalism UI
+          library, the amazing solution for creating stunning webpages. Here's
           why you'll love it!
         </h2>
         <div className="mb-8">
