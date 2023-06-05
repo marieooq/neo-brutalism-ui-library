@@ -17,11 +17,13 @@ Neo-brutalism UI is a collection of Tailwind CSS-based components that embody a 
 
 # Usage
 
-## 1. Recommended: For React users, clone this repository and use Storybook
+## 1. For React users, clone this repository and use Storybook
 
 ![storybook-gif](./public/neo-brutalism-storybook-demo.png)
-Once you colone the repository, run `yarn && yarn storybook` at the root of it. All the components are listed on the left side of the storybook, allowing you to quickly see how they work and check the component's accepted props.
-If you also want to run the app, run `yarn run dev`.
+1. Colone the repository and run `yarn && yarn storybook` at the root of it. 
+2. All the components are listed on the left side of the storybook, allowing you to quickly see how they work and check the component's accepted props.
+3. Feel free to copy the code of the components to your project!
+4. If you also want to run the app, run `yarn run dev`.
 
 ## 2. Easiest: Visit the Neo-Brutalism UI website
 
@@ -71,6 +73,7 @@ Your contributions are always welcome! Make a PR if you have any suggestions!:sm
 [![typescript](./public/typescript-icon.svg)](https://www.typescriptlang.org/)
 [![tailwind css](./public/tailwindcss-icon.svg)](https://tailwindcss.com/)
 [![storybook](./public/storybook-icon.svg)](https://storybook.js.org/)
+
 
 # License
 The MIT License
