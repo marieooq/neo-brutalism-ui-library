@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
-
-type CardType = {
+type ExternalLinkCardType = {
   thumbnail: string | undefined;
   date?: string;
   title?: string;
@@ -9,17 +7,17 @@ type CardType = {
   calllToActionLink: string;
 };
 
-const Card = ({
+const ExternalLinkCard = ({
   thumbnail,
   date,
   title,
   description,
   callToActionText,
   calllToActionLink,
-}: CardType) => {
+}: ExternalLinkCardType) => {
   return (
     <div className="w-full max-w-2xl h-full md:h-[495px] border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
-      <Link to={calllToActionLink}>
+      <a href={calllToActionLink} target="_blank">
         <article className="w-full h-full">
           <figure className="w-full h-1/2 border-black border-b-2">
             <img
@@ -39,9 +37,9 @@ const Card = ({
             {callToActionText && <strong>{callToActionText}</strong>}
           </div>
         </article>
-      </Link>
+      </a>
     </div>
   );
 };
 
-export default Card;
+export default ExternalLinkCard;

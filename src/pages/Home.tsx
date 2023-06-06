@@ -6,6 +6,7 @@ import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
 import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
 import SampleImage3Mobile from "../assets/neo-brutalism-image3-mobile.jpg";
 import Card from "../components/Card";
+import ExternalLinkCard from "../components/ExternalLinkCard";
 import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
 
@@ -66,7 +67,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-yellow-200 w-full md:h-screen snap-start snap-always shrink-0 ">
+      <section className="bg-yellow-200 w-full md:h-full snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20">
           <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
             Tailwind based components
@@ -76,14 +77,8 @@ const Home = () => {
               <Card
                 thumbnail={SampleImage2}
                 date="June 15th, 2023"
-                title="Neo Brutallism"
-                description="Neobrutalism is an aesthetic characterized by high contrast
-              elements, bright colors, and bold shapes. It is often used to make
-              a statement, as it is meant to be eye-catching and stand out to
-              the viewer. It is also used in user interface and web design, with
-              features such as vibrant colors and bold shapes. Neobrutalism can
-              also be used in print design, with an example being a bold shape
-              with a vibrant color fill applied to it."
+                title="What is Neo Brutallism UI?"
+                description="Visit the Getting Started page and learn about its features."
                 callToActionText="Get Started"
                 calllToActionLink="/overview"
               />
@@ -92,32 +87,20 @@ const Home = () => {
               <Card
                 thumbnail={SampleImage2}
                 date="June 15th, 2023"
-                title="Neo Brutallism"
-                description="Neobrutalism is an aesthetic characterized by high contrast
-              elements, bright colors, and bold shapes. It is often used to make
-              a statement, as it is meant to be eye-catching and stand out to
-              the viewer. It is also used in user interface and web design, with
-              features such as vibrant colors and bold shapes. Neobrutalism can
-              also be used in print design, with an example being a bold shape
-              with a vibrant color fill applied to it."
-                callToActionText="Get Started"
-                calllToActionLink="/overview"
+                title="Want to browse the components?"
+                description="Let's take a look at what components are available. You can quickly integrate them into your project with copy and paste."
+                callToActionText="Go to Components Page"
+                calllToActionLink="components/card"
               />
             </div>
             <div className="md:w-[30%]">
-              <Card
+              <ExternalLinkCard
                 thumbnail={SampleImage2}
                 date="June 15th, 2023"
-                title="Neo Brutallism"
-                description="Neobrutalism is an aesthetic characterized by high contrast
-              elements, bright colors, and bold shapes. It is often used to make
-              a statement, as it is meant to be eye-catching and stand out to
-              the viewer. It is also used in user interface and web design, with
-              features such as vibrant colors and bold shapes. Neobrutalism can
-              also be used in print design, with an example being a bold shape
-              with a vibrant color fill applied to it."
-                callToActionText="Get Started"
-                calllToActionLink="/overview"
+                title="Interested in viewing the code?"
+                description="Get ready for an in-depth exploration of the components in action within the codebase. Let's dive deep into how these components work behind the scenes!"
+                callToActionText="Go to Github Repository"
+                calllToActionLink="https://github.com/marieooq/neo-brutalism-ui-library"
               />
             </div>
           </div>
