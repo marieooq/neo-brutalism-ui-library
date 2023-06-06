@@ -4,6 +4,7 @@ import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
 import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
 import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
+import SampleImage3Mobile from "../assets/neo-brutalism-image3-mobile.jpg";
 import Card from "../components/Card";
 import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
@@ -55,7 +56,12 @@ const Home = () => {
             <img
               src={SampleImage3}
               alt="hero"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover hidden md:inline"
+            />
+            <img
+              src={SampleImage3Mobile}
+              alt="hero"
+              className="w-full h-full object-cover inline md:hidden"
             />
           </div>
         </div>
