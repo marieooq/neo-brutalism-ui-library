@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { withRouter } from "storybook-addon-react-router-v6";
 import Card from "../components/Card";
-import SampleImage from "../assets/neo-brutalism-image3.jpg";
+import SampleImage from "../assets/neo-brutalism-image1.jpg";
 
 const meta = {
   title: "Components/Card",
