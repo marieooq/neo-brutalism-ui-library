@@ -15,7 +15,7 @@ import checkboxMarkup from "./checkboxMarkup";
 import dialogMarkup from "./dialogMarkup";
 import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
-import SampleImage from "../assets/neo-brutalism-image3.jpg";
+import SampleImage from "../assets/neo-brutalism-image1.jpg";
 
 const componentsData = [
   {

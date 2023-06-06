@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import SampleImage from "../assets/neo-brutalism-image3.jpg";
+import SampleImage from "../assets/neo-brutalism-image1.jpg";
+import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
+import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
 import Card from "../components/Card";
 import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
@@ -25,7 +27,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-green-200 w-full md:h-screen snap-start snap-always shrink-0 ">
+      <section className="bg-lime-100 w-full md:h-screen snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
           <div className="flex-1 md:mr-12 mb-12 md:mb-0">
             <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
@@ -51,7 +53,7 @@ const Home = () => {
           </div>
           <div className="flex-1 w-full h-full border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             <img
-              src={SampleImage}
+              src={SampleImage3}
               alt="hero"
               className="w-full h-full object-cover"
             />
@@ -66,7 +68,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage}
+                thumbnail={SampleImage2}
                 date="June 15th, 2023"
                 title="Neo Brutallism"
                 description="Neobrutalism is an aesthetic characterized by high contrast
@@ -82,7 +84,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage}
+                thumbnail={SampleImage2}
                 date="June 15th, 2023"
                 title="Neo Brutallism"
                 description="Neobrutalism is an aesthetic characterized by high contrast
@@ -98,7 +100,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%]">
               <Card
-                thumbnail={SampleImage}
+                thumbnail={SampleImage2}
                 date="June 15th, 2023"
                 title="Neo Brutallism"
                 description="Neobrutalism is an aesthetic characterized by high contrast
