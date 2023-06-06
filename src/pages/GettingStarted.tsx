@@ -61,6 +61,30 @@ const GettingStarted = () => {
             your web design game.
           </p>
         </div>
+        <div className="mb-16 leading-relaxed">
+          <p className="leading-relaxed">
+            <strong>Note:</strong> If you are a React user, I highly recommend
+            cloning{" "}
+            <a
+              href="https://github.com/marieooq/neo-brutalism-ui-library"
+              target="_blank"
+              className="underline font-bold "
+            >
+              the GitHub repository
+            </a>{" "}
+            and running Storybook. The instructions for how it works are
+            described in{" "}
+            <a
+              href="https://github.com/marieooq/neo-brutalism-ui-library"
+              target="_blank"
+              className="underline font-bold "
+            >
+              the README file
+            </a>
+            .
+          </p>
+        </div>
+
         <Link to="/components/card" className="flex justify-end">
           <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#A8A6FF] hover:bg-[#918efa] active:bg-[#807dfa] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
             Browse Components

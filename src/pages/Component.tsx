@@ -9,6 +9,8 @@ import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
 import cardMarkup from "../data/cardMarkup";
 import componentsData from "../data/componentsData";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
+import githubIcon from "../assets/github.svg";
+import IconButton from "../components/IconButton";
 
 type displayingComponentType = {
   name: string;
@@ -68,12 +70,21 @@ const Component = () => {
           <div className="flex justify-center items-center border-black border-2 rounded mb-12 py-10 bg-violet-100 min-h-[360px]">
             <div>{displayingComponent?.component}</div>
           </div>
-          <div className="flex justify-end mb-3">
+          <div className="flex justify-end items-center mb-3 space-x-4">
+            <div className="block cursor-pointer">
+              <a
+                href={`https://github.com/marieooq/neo-brutalism-ui-library/blob/main/src/components/${displayingComponent.name}.tsx`}
+                target="_blank"
+              >
+                <IconButton icon={githubIcon} color="yellow" />
+              </a>
+            </div>
+
             <CopyToClipboard
               onCopy={onCopy}
               text={displayingComponent?.markup()}
             >
-              <button className="flex items-center h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+              <button className="flex items-center h-10 border-black border-2 p-2.5 bg-yellow-200 hover:bg-yellow-300 active:bg-yellow-400 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]">
                 <img src={copyIcon} alt="coopy" className="w-5 h-5 mr-2" />
                 Copy to clipboard
               </button>
