@@ -18,7 +18,7 @@ type DialogType = {
 
 const Dialog = ({
   message,
-  width = "fit",
+  width,
   cancelButtonText,
   actionButtonText,
   actionButtonColor,
@@ -26,7 +26,7 @@ const Dialog = ({
   return (
     <div
       className={classNames(
-        "px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center",
+        "w-72 md:w-80 px-8 py-4 bg-white border-4 border-black shadow-[8px_8px_0px_rgba(0,0,0,1)] grid place-content-center",
         { "w-fit": width === "fit" },
         { "w-full": width === "full" },
         { "w-1/2": width === "1/2" },

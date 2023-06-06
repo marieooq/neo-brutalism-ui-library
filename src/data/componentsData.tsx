@@ -79,7 +79,7 @@ const componentsData = [
     name: "Input",
     path: "input",
     component: (
-      <div className="w-96 flex flex-col space-y-6">
+      <div className="md:w-96 flex flex-col space-y-6">
         <Input placeholder="you@example.com" />
         <Input placeholder="you@example.com" rounded="md" />
         <Input placeholder="you@example.com" rounded="full" />
