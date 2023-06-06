@@ -23,7 +23,7 @@ const Header = () => {
             <li className="inline-block hover:underline hover:underline-offset-8">
               <Link to="/components/card">Components</Link>
             </li>
-            <li className="inline-block p-2 cursor-pointer hover:border-black hover:border-2 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+            <li className="inline-block p-2 cursor-pointer">
               <a
                 href="https://github.com/marieooq/neo-brutalism-ui-library"
                 target="_blank"
