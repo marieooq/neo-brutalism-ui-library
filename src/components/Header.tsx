@@ -4,6 +4,7 @@ import Button from "./Button";
 import menuIcon from "../assets/menu.svg";
 import closeIcon from "../assets/close.svg";
 import componentsData from "../data/componentsData.js";
+import githubIcon from "../assets/github.svg";
 
 const Header = () => {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -17,10 +18,18 @@ const Header = () => {
         <Link to="/" className="text-2xl font-bold">
           NEO-UI.
         </Link>
-        <nav className="hidden md:block">
-          <ul className="flex justify-end items-center">
-            <li className="inliine-block hover:underline hover:underline-offset-8 mr-8">
+        <nav className="hidden md:block w-1/2">
+          <ul className="flex justify-end items-center space-x-4">
+            <li className="inline-block hover:underline hover:underline-offset-8">
               <Link to="/components/card">Components</Link>
+            </li>
+            <li className="inline-block p-2 cursor-pointer hover:border-black hover:border-2 hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]">
+              <a
+                href="https://github.com/marieooq/neo-brutalism-ui-library"
+                target="_blank"
+              >
+                <img src={githubIcon} alt="github" className="w-6 h-6" />
+              </a>
             </li>
             <li>
               <Link to="/overview">
@@ -57,9 +66,11 @@ const Header = () => {
             >
               NEO-UI.
             </Link>
-            <button className="navbar-close" onClick={closeSideMenu}>
-              <img src={closeIcon} alt="close" className="w-6 h-6" />
-            </button>
+            <div>
+              <button className="navbar-close" onClick={closeSideMenu}>
+                <img src={closeIcon} alt="close" className="w-6 h-6" />
+              </button>
+            </div>
           </div>
           <div className="p-5">
             <ul className="flex flex-col">
@@ -74,7 +85,7 @@ const Header = () => {
                   <Link to={"/overview"}>Overview</Link>
                 </li>
               </div>
-              <div className="pb-4">
+              <div className="pb-12">
                 <label className="text-lg font-bold block mb-4">
                   Components
                 </label>
@@ -89,6 +100,16 @@ const Header = () => {
                     </li>
                   );
                 })}
+              </div>
+              <div className="pb-4">
+                <li className="inline-block cursor-pointer">
+                  <a
+                    href="https://github.com/marieooq/neo-brutalism-ui-library"
+                    target="_blank"
+                  >
+                    <img src={githubIcon} alt="github" className="w-6 h-6" />
+                  </a>
+                </li>
               </div>
             </ul>
           </div>
