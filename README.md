@@ -45,7 +45,7 @@ Material Design Icons are used in the components. You can download the icons [he
   | -------------- | :--------: | -------------------------------------------------------: |
   | xxx-violet-200 | `#A8A6FF`  | ![violet-300](https://readme-swatches.vercel.app/A8A6FF) |
   | xxx-violet-300 | `#918efa`  | ![violet-200](https://readme-swatches.vercel.app/918efa) |
-  | xxx-violet-400 | `#807dfa`  | ![violet-400](https://readme-swatches.vercel.app/FFA6F6) |
+  | xxx-violet-400 | `#807dfa`  | ![violet-400](https://readme-swatches.vercel.app/807dfa) |
   | xxx-pink-200   | `#FFA6F6`  |   ![pink-300](https://readme-swatches.vercel.app/FFA6F6) |
   | xxx-pink-300   | `#fa8cef`  |   ![pink-300](https://readme-swatches.vercel.app/fa8cef) |
   | xxx-pink-400   | `#fa7fee`  |   ![pink-300](https://readme-swatches.vercel.app/fa7fee) |
