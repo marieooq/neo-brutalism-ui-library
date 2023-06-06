@@ -1,10 +1,10 @@
 # Neo-Brutalism UI Library
 
-[Neo-brutalism UI](https://neo-brutalism-ui-library.vercel.app/) is a collection of [Tailwind CSS-based](https://tailwindcss.com/) components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages, allowing designers to create striking interfaces.
+[Neo-brutalism UI](https://neo-brutalism-ui-library.vercel.app/) is a collection of [React](https://react.dev/) and [Tailwind CSS-based](https://tailwindcss.com/) components that embody a design approach characterized by bold, high-contrast elements and vibrant colors. It offers a unique and eye-catching aesthetic for webpages.
 
 ## Demo screen recording
 
-![demo-gif](./public/neo-brutalism-ui-demo.gif)
+![demo-gif](./public/neo-brutalism-demo.gif)
 
 # Table of contents
 
@@ -22,16 +22,15 @@
 ![storybook-gif](./public/neo-brutalism-storybook-demo.png)
 
 1. Clone the repository and run `yarn && yarn storybook` at the root of it.
-2. All the components are listed on the left side of the storybook, allowing you to quickly see how they work and check the component's accepted props.
-3. Feel free to copy the code of the components to your project!
-4. If you also want to run the app, run `yarn run dev`.
+2. All the components are listed on the left side of the Storybook, allowing you to quickly see how they work and check the component's accepted props.
+3. Feel free to copy the code of the components to your project! All the components can be found in [./src/components folder](./src/components/).
+4. If you also want to run the app, run `yarn run dev` at the root of the directory.
 
 ## 2. Easier way: Visit the Neo-Brutalism UI website
 
-1. Visit [Neo-Brutalism UI website](https://neo-brutalism-ui-library.vercel.app/), and navigate to the components page.
-2. Simply copy and paste the desired code snippet.
-3. To see it in action, access [the playground in StackBlitz](https://stackblitz.com/edit/tailwindcss-a14rd1?file=index.html)and paste your code there.
-   Reference:[Demo screen recording](#demo-screen-recording)
+1. Visit [Neo-Brutalism UI website](https://neo-brutalism-ui-library.vercel.app/), and navigate to the [components page](https://neo-brutalism-ui-library.vercel.app/components/card).
+2. Simply copy and paste the code snippet by clicking "Copy to clipboard" button.
+3. To see it in action, access [the playground in StackBlitz](https://stackblitz.com/edit/tailwindcss-a14rd1?file=index.html)and paste your code there. [Demo screen recording](#demo-screen-recording) might help for you to figure out how it works.
 
 ## Note
 
