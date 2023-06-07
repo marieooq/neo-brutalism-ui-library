@@ -71,7 +71,7 @@ Your contributions are always welcome! Make a PR if you have any suggestions!:sm
 
 # Technologies
 
-<div align="center">
+<div>
 <a href="https://react.dev/" target="_blank">
   <img width="50" alt="react-logo" src="./public/react.svg" />
 </a>
