@@ -1,8 +1,8 @@
 import React, { createContext } from "react";
-import { ACTIONTYPE } from "../App";
+import { COPY_ACTION_TYPE } from "../App";
 
 type copiedCodeContext = boolean;
-type copiedCodeDispatch = React.Dispatch<ACTIONTYPE> | null;
+type copiedCodeDispatch = React.Dispatch<COPY_ACTION_TYPE> | null;
 
 export const CopiedCodeContext = createContext<copiedCodeContext>(false);
 export const CopiedCodeDispatchContext =
