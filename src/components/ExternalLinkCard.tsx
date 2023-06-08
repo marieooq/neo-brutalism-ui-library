@@ -16,7 +16,7 @@ const ExternalLinkCard = ({
   calllToActionLink,
 }: ExternalLinkCardType) => {
   return (
-    <div className="w-full max-w-2xl h-full md:h-[480px] lg:h-[600px] border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
+    <div className="w-full max-w-2xl h-full md:h-[480px] 2xl:h-[600px] border-black border-2 rounded-md hover:shadow-[8px_8px_0px_rgba(0,0,0,1)] bg-white">
       <a href={calllToActionLink} target="_blank">
         <article className="w-full h-full">
           <figure className="w-full border-black border-b-2">

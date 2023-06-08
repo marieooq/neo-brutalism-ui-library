@@ -21,7 +21,7 @@ const Snackbar = () => {
   return (
     <div
       className={classNames(
-        "flex items-center bg-cyan-200 text-sm font-bold px-4 py-3 fixed bottom-10 left-5 z-50 border-black border-2 ease-in-out",
+        "flex items-center bg-cyan-200 text-sm font-bold px-4 py-3 fixed bottom-10 right-5 z-50 border-black border-2 ease-in-out",
         { block: isCopy },
         { hidden: !isCopy }
       )}

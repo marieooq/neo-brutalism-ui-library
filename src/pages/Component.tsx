@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useState } from "react";
+import { useCallback, useContext, useEffect, useState, useRef } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
@@ -6,6 +6,7 @@ import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import copyIcon from "../assets/copy.svg";
 import Card from "../components/Card";
 import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
+import { WindowHeightDispatchContext } from "../context/WindowHeightContext";
 import cardMarkup from "../data/cardMarkup";
 import componentsData from "../data/componentsData";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
@@ -42,7 +43,11 @@ const Component = () => {
       ),
       markup: cardMarkup,
     });
+  const refElement = useRef<HTMLInputElement>(null);
   const dispatch = useContext(CopiedCodeDispatchContext);
+  const windowHeightDispatch = useContext(WindowHeightDispatchContext);
+
+  let windowInnerHeight = window.innerHeight;
 
   const { id } = useParams();
 
@@ -62,8 +67,16 @@ const Component = () => {
     id && switchComopnents(id);
   }, [id]);
 
+  useEffect(() => {
+    const elementHeight = Number(
+      JSON.stringify(refElement?.current?.getBoundingClientRect().height)
+    );
+    windowHeightDispatch &&
+      windowHeightDispatch({ type: elementHeight > windowInnerHeight });
+  }, [displayingComponent]);
+
   return (
-    <div className="relative">
+    <div className="relative" ref={refElement}>
       <h1 className="font-bold capitalize text-4xl mb-8">{id}</h1>
       {displayingComponent && (
         <>
