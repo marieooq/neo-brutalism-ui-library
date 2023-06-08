@@ -13,7 +13,7 @@ import cardMarkup from "../data/cardMarkup";
 const Home = () => {
   return (
     <div className="snap-mandatory snap-y overflow-scroll">
-      <section className="bg-teal-200 w-full  h-[calc(100vh-80px)] snap-start snap-always shrink-0">
+      <section className="bg-teal-200 w-full h-[calc(100vh-80px)] snap-start snap-always shrink-0">
         <div className="w-full h-full bg-pink-200 relative">
           <img
             src={SampleImage}
@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-lime-100 w-full md:h-screen snap-start snap-always shrink-0 ">
+      <section className="bg-lime-100 w-full md:h-screen lg:h-full snap-start snap-always shrink-0 ">
         <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
           <div className="flex-1 md:mr-12 mb-12 md:mb-0">
             <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
@@ -53,7 +53,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div className="flex-1 w-full h-full border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
+          <div className="flex-1 w-full h-full max-h-[600px] border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             <img
               src={SampleImage3}
               alt="hero"
