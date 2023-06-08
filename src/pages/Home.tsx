@@ -29,8 +29,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="bg-lime-100 w-full md:h-screen lg:h-full snap-start snap-always shrink-0 ">
-        <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
+      <section className="bg-lime-100 w-full md:h-screen lg:h-full snap-start snap-always shrink-0">
+        <div className="px-5 md:px-24 h-full py-20 2xl:p-32 flex flex-col md:flex-row justify-between items-center">
           <div className="flex-1 md:mr-12 mb-12 md:mb-0">
             <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
               Check the box that applies to your situation.
@@ -68,7 +68,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-yellow-200 w-full md:h-full snap-start snap-always shrink-0 ">
-        <div className="px-5 md:px-24 h-full py-20">
+        <div className="px-5 md:px-24 h-full py-20 2xl:p-32">
           <h2 className="text-6xl md:text-7xl mb-12 tracking-tight font-bold">
             Tailwind based components
           </h2>
@@ -107,7 +107,7 @@ const Home = () => {
         </div>
       </section>
       <section className="bg-violet-100 w-full h-auto snap-start snap-always shrink-0 ">
-        <div className="px-5 md:px-24 h-full py-20 flex flex-col md:flex-row justify-between items-center">
+        <div className="px-5 md:px-24 h-full py-20 2xl:p-32 flex flex-col md:flex-row justify-between items-center">
           <div className="w-full md:w-6/12 md:h-full flex flex-col md:mr-12 mb-12 md:mb-0">
             <div className="w-full">
               <SyntaxHighlighter
@@ -138,7 +138,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <footer className="w-full h-[200px] m-auto flex justify-between items-center px-5 md:px-24 bg-black">
+      <footer className="w-full h-[200px] m-auto flex justify-between items-center px-5 md:px-24 2xl:p-32 bg-black">
         <div>
           <Link to="/" className="text-2xl font-bold text-white">
             NEO-UI.
