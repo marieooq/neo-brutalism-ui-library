@@ -134,7 +134,7 @@ const componentsData = [
   {
     name: "ToggleSwitch",
     path: "toggleSwitch",
-    component: <ToggleSwitch />,
+    component: <ToggleSwitch text="Toggle me" />,
     markup: toggleSwitchMarkup,
     new: true,
   },
