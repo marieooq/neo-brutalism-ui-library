@@ -9,7 +9,7 @@ import DropDown from "../components/DropDown";
 import IconButton from "../components/IconButton";
 import Input from "../components/Input";
 import ToggleSwitch from "../components/ToggleSwitch";
-import IconButtonMarkup from "../data/iconButtonMarkup";
+import IconButtonMarkup from "./iconButtonMarkup";
 import buttonMarkup from "./buttonMarkup";
 import cardMarkup from "./cardMarkup";
 import checkboxMarkup from "./checkboxMarkup";
@@ -18,6 +18,14 @@ import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
 import toggleSwitchMarkup from "./toggleSwitchMarkup";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
+
+type componentsData = {
+  name: string;
+  path: string;
+  component: React.ReactNode;
+  markup: React.ReactNode;
+  new?: boolean;
+}[];
 
 const componentsData = [
   {
@@ -128,6 +136,7 @@ const componentsData = [
     path: "toggleSwitch",
     component: <ToggleSwitch />,
     markup: toggleSwitchMarkup,
+    new: true,
   },
 ];
 
