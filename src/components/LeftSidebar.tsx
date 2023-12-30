@@ -30,20 +30,27 @@ const LeftSidebar = () => {
           </div>
           <div className="pb-4">
             <label className="text-lg font-bold block mb-4">Components</label>
-            {componentsData.map((obj, index) => {
+            {componentsData.map((data, index) => {
               return (
-                <li
-                  className={classNames(
-                    "inliine-block hover:underline hover:underline-offset-8 mb-4",
-                    {
-                      "font-bold underline underline-offset-8":
-                        location.pathname.includes(obj.path),
-                    }
+                <div className="flex items-center mb-4 gap-2">
+                  <li
+                    className={classNames(
+                      "inliine-block hover:underline hover:underline-offset-8",
+                      {
+                        "font-bold underline underline-offset-8":
+                          location.pathname.includes(data.path),
+                      }
+                    )}
+                    key={index}
+                  >
+                    <Link to={`/components/${data.path}`}>{data.name}</Link>
+                  </li>
+                  {data.new && (
+                    <span className="text-xs bg-violet-200 px-2 py-1 rounded">
+                      New
+                    </span>
                   )}
-                  key={index}
-                >
-                  <Link to={`/components/${obj.path}`}>{obj.name}</Link>
-                </li>
+                </div>
               );
             })}
           </div>
