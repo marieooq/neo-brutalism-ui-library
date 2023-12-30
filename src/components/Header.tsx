@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import Button from "./Button";
 import menuIcon from "../assets/menu.svg";
 import closeIcon from "../assets/close.svg";
-import componentsData from "../data/componentsData.js";
+import componentsData from "../data/componentsData.tsx";
+import { generateMenuList } from "./LeftSidebar";
 import githubIcon from "../assets/github.svg";
 
 const Header = () => {
@@ -89,24 +90,7 @@ const Header = () => {
                 <label className="text-lg font-bold block mb-4">
                   Components
                 </label>
-                {componentsData.map((data, index) => {
-                  return (
-                    <div className="flex items-center mb-4 gap-2">
-                      <li
-                        className="inliine-block hover:underline hover:underline-offset-8"
-                        key={index}
-                        onClick={closeSideMenu}
-                      >
-                        <Link to={`/components/${data.path}`}>{data.name}</Link>
-                      </li>
-                      {data.new && (
-                        <span className="text-xs bg-violet-200 px-2 py-1 rounded">
-                          New
-                        </span>
-                      )}
-                    </div>
-                  );
-                })}
+                {generateMenuList(componentsData, "mobile", closeSideMenu)}
               </div>
               <div className="pb-4">
                 <li className="inline-block cursor-pointer">
