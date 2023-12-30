@@ -29,10 +29,6 @@ const copyReducer = (_: any, action: COPY_ACTION_TYPE) => {
   }
 };
 
-const windowHeightReducer = (_: any, action: WINDOW_HEIGHT_ACTION_TYPE) => {
-  return action.type;
-};
-
 function App() {
   const [isCopy, dispatch] = useReducer(copyReducer, false);
 

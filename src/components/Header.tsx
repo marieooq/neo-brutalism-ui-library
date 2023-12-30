@@ -89,15 +89,22 @@ const Header = () => {
                 <label className="text-lg font-bold block mb-4">
                   Components
                 </label>
-                {componentsData.map((obj, index) => {
+                {componentsData.map((data, index) => {
                   return (
-                    <li
-                      className="inliine-block hover:underline hover:underline-offset-8 mb-4"
-                      key={index}
-                      onClick={closeSideMenu}
-                    >
-                      <Link to={`/components/${obj.path}`}>{obj.name}</Link>
-                    </li>
+                    <div className="flex items-center mb-4 gap-2">
+                      <li
+                        className="inliine-block hover:underline hover:underline-offset-8"
+                        key={index}
+                        onClick={closeSideMenu}
+                      >
+                        <Link to={`/components/${data.path}`}>{data.name}</Link>
+                      </li>
+                      {data.new && (
+                        <span className="text-xs bg-violet-200 px-2 py-1 rounded">
+                          New
+                        </span>
+                      )}
+                    </div>
                   );
                 })}
               </div>
