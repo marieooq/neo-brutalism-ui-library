@@ -6,7 +6,6 @@ import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import copyIcon from "../assets/copy.svg";
 import Card from "../components/Card";
 import { CopiedCodeDispatchContext } from "../context/CopiedCodeContext";
-import { WindowHeightDispatchContext } from "../context/WindowHeightContext";
 import cardMarkup from "../data/cardMarkup";
 import componentsData from "../data/componentsData";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
@@ -45,9 +44,6 @@ const Component = () => {
     });
   const refElement = useRef<HTMLInputElement>(null);
   const dispatch = useContext(CopiedCodeDispatchContext);
-  const windowHeightDispatch = useContext(WindowHeightDispatchContext);
-
-  let windowInnerHeight = window.innerHeight;
 
   const { id } = useParams();
 
@@ -66,14 +62,6 @@ const Component = () => {
   useEffect(() => {
     id && switchComopnents(id);
   }, [id]);
-
-  useEffect(() => {
-    const elementHeight = Number(
-      JSON.stringify(refElement?.current?.getBoundingClientRect().height)
-    );
-    windowHeightDispatch &&
-      windowHeightDispatch({ type: elementHeight > windowInnerHeight });
-  }, [displayingComponent]);
 
   return (
     <div className="relative" ref={refElement}>
