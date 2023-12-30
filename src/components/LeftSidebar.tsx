@@ -1,12 +1,9 @@
-import { useContext } from "react";
 import classNames from "classnames";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import componentsData from "../data/componentsData.js";
-import { WindowHeightContext } from "../context/WindowHeightContext.js";
 
 const LeftSidebar = () => {
   const location = useLocation();
-  const isExceededWindowHeight = useContext(WindowHeightContext);
 
   return (
     <section className="w-full flex">
@@ -58,9 +55,7 @@ const LeftSidebar = () => {
       </div>
       <div
         className={classNames(
-          "bg-cyan-200 w-full md:w-[calc(100vw-360px)] md:ml-[360px] p-5 md:p-24",
-          { "h-full": isExceededWindowHeight === true },
-          { "h-screen": isExceededWindowHeight === false }
+          "bg-cyan-200 w-full md:w-[calc(100vw-360px)] md:ml-[360px] p-5 md:p-24 min-h-screen max-h-full"
         )}
       >
         <Outlet />
