@@ -19,15 +19,15 @@ import inputMarkup from "./inputMarkup";
 import toggleSwitchMarkup from "./toggleSwitchMarkup";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
 
-type componentsData = {
+export type componentsDataType = {
   name: string;
   path: string;
   component: React.ReactNode;
-  markup: React.ReactNode;
+  markup: () => string;
   new?: boolean;
 }[];
 
-const componentsData = [
+const componentsData: componentsDataType = [
   {
     name: "Card",
     path: "card",

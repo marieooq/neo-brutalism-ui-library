@@ -1,12 +1,38 @@
-import { useContext } from "react";
 import classNames from "classnames";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import componentsData from "../data/componentsData.js";
-import { WindowHeightContext } from "../context/WindowHeightContext.js";
+import componentsData, { componentsDataType } from "../data/componentsData.tsx";
+
+export const generateMenuList = (
+  componentsData: componentsDataType,
+  device: "desktop" | "mobile",
+  onClick?: () => void
+) => {
+  return componentsData.map((data, index) => {
+    return (
+      <div className="flex items-center mb-4 gap-2">
+        <li
+          className={classNames(
+            "inliine-block hover:underline hover:underline-offset-8",
+            {
+              "font-bold underline underline-offset-8":
+                location.pathname.includes(data.path) && device === "desktop",
+            }
+          )}
+          onClick={onClick && onClick}
+          key={index}
+        >
+          <Link to={`/components/${data.path}`}>{data.name}</Link>
+        </li>
+        {data.new && (
+          <span className="text-xs bg-violet-200 px-2 py-1 rounded">New</span>
+        )}
+      </div>
+    );
+  });
+};
 
 const LeftSidebar = () => {
   const location = useLocation();
-  const isExceededWindowHeight = useContext(WindowHeightContext);
 
   return (
     <section className="w-full flex">
@@ -30,37 +56,13 @@ const LeftSidebar = () => {
           </div>
           <div className="pb-4">
             <label className="text-lg font-bold block mb-4">Components</label>
-            {componentsData.map((data, index) => {
-              return (
-                <div className="flex items-center mb-4 gap-2">
-                  <li
-                    className={classNames(
-                      "inliine-block hover:underline hover:underline-offset-8",
-                      {
-                        "font-bold underline underline-offset-8":
-                          location.pathname.includes(data.path),
-                      }
-                    )}
-                    key={index}
-                  >
-                    <Link to={`/components/${data.path}`}>{data.name}</Link>
-                  </li>
-                  {data.new && (
-                    <span className="text-xs bg-violet-200 px-2 py-1 rounded">
-                      New
-                    </span>
-                  )}
-                </div>
-              );
-            })}
+            {generateMenuList(componentsData, "desktop")}
           </div>
         </ul>
       </div>
       <div
         className={classNames(
-          "bg-cyan-200 w-full md:w-[calc(100vw-360px)] md:ml-[360px] p-5 md:p-24",
-          { "h-full": isExceededWindowHeight === true },
-          { "h-screen": isExceededWindowHeight === false }
+          "bg-cyan-200 w-full md:w-[calc(100vw-360px)] md:ml-[360px] p-5 md:p-24 min-h-screen max-h-full"
         )}
       >
         <Outlet />
