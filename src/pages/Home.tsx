@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
-import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
-import SampleImage3Mobile from "../assets/neo-brutalism-image3-mobile.jpg";
+import CardThumbnail from "../assets/neo-brutalism-image2.jpg";
+import PromotionImage from "../assets/neo-brutalism-image3.jpg";
+import PromotionImageMobile from "../assets/neo-brutalism-image3-mobile.jpg";
 import Card from "../components/Card";
 import ExternalLinkCard from "../components/ExternalLinkCard";
 import Checkbox from "../components/Checkbox";
@@ -60,13 +60,13 @@ const Home = () => {
           </div>
           <div className="flex-1 w-full h-full max-h-[600px] border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             <img
-              src={SampleImage3}
-              alt="hero"
+              src={PromotionImage}
+              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
               className="w-full h-full object-cover hidden md:inline"
             />
             <img
-              src={SampleImage3Mobile}
-              alt="hero"
+              src={PromotionImageMobile}
+              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
               className="w-full h-full object-cover inline md:hidden"
             />
           </div>
@@ -80,7 +80,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="What is Neo Brutallism UI?"
                 description="Visit the Getting Started page and learn about its features."
@@ -90,7 +90,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="Want to browse the components?"
                 description="Let's take a look at what components are available. You can quickly integrate them into your project with copy and paste."
@@ -100,7 +100,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%]">
               <ExternalLinkCard
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="Interested in viewing the code?"
                 description="Get ready for an in-depth exploration of the components in action within the codebase. Let's dive deep into how these components work behind the scenes!"
