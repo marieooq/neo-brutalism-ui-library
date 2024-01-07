@@ -32,7 +32,7 @@ const Home = () => {
                   rounded="full"
                   size="lg"
                   color="yellow"
-                  extraPadding
+                  className="px-12"
                 />
               </Link>
             </div>
@@ -146,7 +146,7 @@ const Home = () => {
                 rounded="full"
                 size="lg"
                 color="lime"
-                extraPadding
+                className="px-12"
               />
             </Link>
           </div>

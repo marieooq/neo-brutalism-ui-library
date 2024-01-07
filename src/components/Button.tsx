@@ -6,7 +6,7 @@ type ButtonType = {
   size?: "sm" | "md" | "lg";
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
   disabled?: boolean;
-  extraPadding?: boolean;
+  className?: string;
 };
 
 const Button = ({
@@ -15,7 +15,7 @@ const Button = ({
   size = "md",
   color = "cyan",
   disabled,
-  extraPadding,
+  className,
 }: ButtonType) => {
   return (
     <button
@@ -60,7 +60,7 @@ const Button = ({
           "border-[#727272] bg-[#D4D4D4] text-[#676767] hover:bg-[#D4D4D4] hover:shadow-none active:bg-[#D4D4D4]":
             disabled,
         },
-        { "px-12": extraPadding }
+        className
       )}
       disabled={disabled}
     >
