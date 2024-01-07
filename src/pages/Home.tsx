@@ -20,7 +20,7 @@ const Home = () => {
               <h1 className="text-7xl md:text-8xl font-black pt-40 md:pt-14 tracking-tight hero-font mb-5">
                 Neo-Brutalism UI
               </h1>
-              <p className="text-2xl md:text-4xl hero-font">
+              <p className="text-2xl md:text-3xl hero-font">
                 Neobrutalism is high contrast, bright colors, and bold shapes
                 <br /> used for eye-catching statements, UI, web, design.
               </p>
