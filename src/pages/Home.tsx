@@ -67,12 +67,12 @@ const Home = () => {
             <img
               src={PromotionImage}
               alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
-              className="w-full h-full object-cover hidden md:inline"
+              className="w-full h-full max-h-[600px] object-cover hidden md:inline"
             />
             <img
               src={PromotionImageMobile}
               alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
-              className="w-full h-full object-cover inline md:hidden"
+              className="w-full h-full max-h-[600px] object-cover inline md:hidden"
             />
           </div>
         </div>
