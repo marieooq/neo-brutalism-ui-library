@@ -15,9 +15,9 @@ const Home = () => {
     <div className="snap-mandatory snap-y overflow-scroll">
       <section className="bg-teal-200 w-full h-[calc(100vh-80px)] min-h-screen snap-start snap-always shrink-0">
         <div className="w-full h-full bg-pink-200 relative bg-cover bg-no-repeat bg-center bg-scroll bg-mobile md:bg-desktop">
-          <div className="w-9/12 m-auto flex flex-col md:flex-row md:items-end gap-8 md:gap-12">
-            <div>
-              <h1 className="text-7xl md:text-8xl font-black pt-40 md:pt-14 tracking-tight hero-font mb-5">
+          <div className="px-5 md:px-40 flex flex-col md:flex-row md:items-end gap-8 md:gap-12">
+            <div className="mt-32 md:mt-12">
+              <h1 className="text-7xl md:text-8xl font-black md:pt-14 tracking-tight hero-font mb-5">
                 Neo-Brutalism UI
               </h1>
               <p className="text-2xl md:text-3xl hero-font">
@@ -32,7 +32,7 @@ const Home = () => {
                   rounded="full"
                   size="lg"
                   color="yellow"
-                  className="px-12"
+                  className="w-[200px]"
                 />
               </Link>
             </div>
@@ -146,7 +146,7 @@ const Home = () => {
                 rounded="full"
                 size="lg"
                 color="lime"
-                className="px-12"
+                className="w-[200px]"
               />
             </Link>
           </div>
