@@ -42,7 +42,25 @@ export default {
           400: "#53f2fc",
         },
       },
+      backgroundImage: (theme) => ({
+        desktop: "url('/src/assets/neo-brutalism-image1.svg')",
+        mobile: "url('/src/assets/neo-brutalism-image1-mobile.svg')",
+      }),
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".bg-desktop": {
+          "background-image": "url('/src/assets/neo-brutalism-image1.svg')",
+        },
+        ".bg-mobile": {
+          "background-image":
+            "url('/src/assets/neo-brutalism-image1-mobile.svg')",
+        },
+      };
+
+      addUtilities(newUtilities, ["responsive", "hover"]);
+    },
+  ],
 };

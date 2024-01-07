@@ -4,9 +4,14 @@ import { useState } from "react";
 type CheckBoxType = {
   size?: "sm" | "lg";
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
+  className?: string;
 };
 
-const Checkbox = ({ color = "orange", size = "sm" }: CheckBoxType) => {
+const Checkbox = ({
+  color = "orange",
+  size = "sm",
+  className,
+}: CheckBoxType) => {
   const [checked, setChecked] = useState(false);
   return (
     <>
@@ -48,7 +53,8 @@ const Checkbox = ({ color = "orange", size = "sm" }: CheckBoxType) => {
             },
             {
               "before:bg-cyan-200 before:checked:bg-cyan-300": color === "cyan",
-            }
+            },
+            className
           )}
           checked={checked}
           onClick={() => setChecked(!checked)}
