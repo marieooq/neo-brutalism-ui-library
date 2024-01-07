@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import SampleImage from "../assets/neo-brutalism-image1.jpg";
 import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
 import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
 import SampleImage3Mobile from "../assets/neo-brutalism-image3-mobile.jpg";
@@ -13,21 +12,25 @@ import cardMarkup from "../data/cardMarkup";
 const Home = () => {
   return (
     <div className="snap-mandatory snap-y overflow-scroll">
-      <section className="bg-teal-200 w-full h-[calc(100vh-80px)] snap-start snap-always shrink-0">
-        <div className="w-full h-full bg-pink-200 relative">
-          <Link to="/overview">
-            <img
-              src={SampleImage}
-              alt="hero"
-              className="w-full h-full object-cover"
-            />
-          </Link>
-          <div className="absolute bottom-[120px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
-            <Link to="overview">
-              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
-                Get Started
-              </button>
-            </Link>
+      <section className="bg-teal-200 w-full h-[calc(100vh-80px)] min-h-screen snap-start snap-always shrink-0">
+        <div className="w-full h-full bg-pink-200 relative bg-cover bg-no-repeat bg-center bg-scroll bg-mobile md:bg-desktop">
+          <div className="w-9/12 m-auto flex flex-col md:flex-row md:items-end gap-8 md:gap-12">
+            <div>
+              <h1 className="text-7xl md:text-8xl font-black pt-40 md:pt-14 tracking-tight hero-font mb-5">
+                Neo-Brutalism UI
+              </h1>
+              <p className="text-2xl md:text-4xl hero-font">
+                Neobrutalism is high contrast, bright colors, and bold shapes
+                <br /> used for eye-catching statements, UI, web, design.
+              </p>
+            </div>
+            <div className="self-center md:self-auto">
+              <Link to="overview">
+                <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
+                  <span className="font-bold">Get Started</span>
+                </button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

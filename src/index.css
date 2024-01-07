@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero-font {
+  font-family: "Big Shoulders Display", sans-serif;
+}
