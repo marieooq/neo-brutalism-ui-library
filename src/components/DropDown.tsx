@@ -6,9 +6,10 @@ type DropdownType = {
   title: string;
   list: { to: string; name: string }[];
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
+  className?: string;
 };
 
-const DropDown = ({ title, list, color = "lime" }: DropdownType) => {
+const DropDown = ({ title, list, color = "lime", className }: DropdownType) => {
   const [open, setOpen] = useState(false);
   return (
     <>
@@ -24,7 +25,8 @@ const DropDown = ({ title, list, color = "lime" }: DropdownType) => {
               { "bg-orange-200 hover:bg-orange-300": color === "orange" },
               { "bg-yellow-200 hover:bg-yellow-300": color === "yellow" },
               { "bg-lime-200 hover:bg-lime-300": color === "lime" },
-              { "bg-cyan-200 hover:bg-cyan-300": color === "cyan" }
+              { "bg-cyan-200 hover:bg-cyan-300": color === "cyan" },
+              className
             )}
             id="menu-button"
             aria-expanded="true"

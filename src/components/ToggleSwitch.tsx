@@ -4,9 +4,15 @@ type ToggleSwitchType = {
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
   text?: string;
   disabled?: boolean;
+  className?: string;
 };
 
-const ToggleSwitch = ({ color, text, disabled = false }: ToggleSwitchType) => {
+const ToggleSwitch = ({
+  color,
+  text,
+  disabled = false,
+  className,
+}: ToggleSwitchType) => {
   return (
     <label className="relative inline-flex items-center mb-5 cursor-pointer">
       <input
@@ -38,7 +44,8 @@ const ToggleSwitch = ({ color, text, disabled = false }: ToggleSwitchType) => {
           },
           {
             "peer-checked:bg-cyan-300": color === "cyan",
-          }
+          },
+          className
         )}
       ></div>
       {text && <span className="ms-3 text-md font-medium">{text}</span>}

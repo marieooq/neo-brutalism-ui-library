@@ -12,12 +12,14 @@ type InputType = {
     | "lime"
     | "cyan";
   rounded?: "none" | "md" | "full";
+  className?: string;
 };
 
 const Input = ({
   placeholder,
   focusColor = "pink",
   rounded = "none",
+  className,
 }: InputType) => {
   const [value, setValue] = useState("");
   return (
@@ -33,7 +35,8 @@ const Input = ({
         { "focus:bg-cyan-200": focusColor === "cyan" },
         { "rounded-none": rounded === "none" },
         { "rounded-md": rounded === "md" },
-        { "rounded-full": rounded === "full" }
+        { "rounded-full": rounded === "full" },
+        className
       )}
       type="text"
       placeholder={placeholder}
