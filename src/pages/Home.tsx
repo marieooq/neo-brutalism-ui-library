@@ -5,6 +5,7 @@ import CardThumbnail from "../assets/neo-brutalism-image2.jpg";
 import PromotionImage from "../assets/neo-brutalism-image3.jpg";
 import PromotionImageMobile from "../assets/neo-brutalism-image3-mobile.jpg";
 import Card from "../components/Card";
+import Button from "../components/Button";
 import ExternalLinkCard from "../components/ExternalLinkCard";
 import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
@@ -24,11 +25,15 @@ const Home = () => {
                 <br /> used for eye-catching statements, UI, web, design.
               </p>
             </div>
-            <div className="self-center md:self-auto">
+            <div className="self-center md:self-auto w-[200px]">
               <Link to="overview">
-                <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
-                  <span className="font-bold">Get Started</span>
-                </button>
+                <Button
+                  buttonText="Get Started"
+                  rounded="full"
+                  size="lg"
+                  color="yellow"
+                  extraPadding
+                />
               </Link>
             </div>
           </div>
@@ -136,9 +141,13 @@ const Home = () => {
               and take your web design to the next level!
             </p>
             <Link to="overview">
-              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#B8FF9F] hover:bg-[#9dfc7c] active:bg-[#7df752] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
-                Get Started
-              </button>
+              <Button
+                buttonText="Get Started"
+                rounded="full"
+                size="lg"
+                color="lime"
+                extraPadding
+              />
             </Link>
           </div>
         </div>
