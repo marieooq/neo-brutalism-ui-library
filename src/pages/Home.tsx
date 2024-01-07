@@ -15,8 +15,8 @@ const Home = () => {
     <div className="snap-mandatory snap-y overflow-scroll">
       <section className="bg-teal-200 w-full h-[calc(100vh-80px)] min-h-screen snap-start snap-always shrink-0">
         <div className="w-full h-full bg-pink-200 relative bg-cover bg-no-repeat bg-center bg-scroll bg-mobile md:bg-desktop">
-          <div className="px-5 md:px-40 flex flex-col md:flex-row md:items-end gap-8 md:gap-12">
-            <div className="mt-32 md:mt-12">
+          <div className="px-5 md:px-40 flex flex-col md:flex-row items-center md:items-end gap-8 md:gap-12">
+            <div className="mt-32 md:mt-10">
               <h1 className="text-7xl md:text-8xl font-black md:pt-14 tracking-tight hero-font mb-5">
                 Neo-Brutalism UI
               </h1>
@@ -25,17 +25,15 @@ const Home = () => {
                 <br /> used for eye-catching statements, UI, web, design.
               </p>
             </div>
-            <div className="self-center md:self-auto w-[200px]">
-              <Link to="overview">
-                <Button
-                  buttonText="Get Started"
-                  rounded="full"
-                  size="lg"
-                  color="yellow"
-                  className="w-[200px]"
-                />
-              </Link>
-            </div>
+            <Link to="overview">
+              <Button
+                buttonText="Get Started"
+                rounded="full"
+                size="lg"
+                color="yellow"
+                className="w-[200px]"
+              />
+            </Link>
           </div>
         </div>
       </section>
