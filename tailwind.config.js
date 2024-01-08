@@ -43,8 +43,8 @@ export default {
         },
       },
       backgroundImage: (theme) => ({
-        desktop: "url('/src/assets/neo-brutalism-image1.svg')",
-        mobile: "url('/src/assets/neo-brutalism-image1-mobile.svg')",
+        desktop: "url('/src/assets/neo-brutalism-image1.webp')",
+        mobile: "url('/src/assets/neo-brutalism-image1-mobile.webp')",
       }),
     },
   },
@@ -52,11 +52,11 @@ export default {
     function ({ addUtilities }) {
       const newUtilities = {
         ".bg-desktop": {
-          "background-image": "url('/src/assets/neo-brutalism-image1.svg')",
+          "background-image": "url('/src/assets/neo-brutalism-image1.webp')",
         },
         ".bg-mobile": {
           "background-image":
-            "url('/src/assets/neo-brutalism-image1-mobile.svg')",
+            "url('/src/assets/neo-brutalism-image1-mobile.webp')",
         },
       };
 
