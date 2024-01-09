@@ -76,9 +76,9 @@ const Header = () => {
           <div className="p-5">
             <ul className="flex flex-col">
               <div className="pb-8">
-                <label className="text-lg font-bold block mb-4">
+                <span className="text-lg font-bold block mb-4">
                   Getting started
-                </label>
+                </span>
                 <li
                   className="inliine-block hover:underline hover:underline-offset-8 mb-4"
                   onClick={closeSideMenu}
@@ -87,9 +87,7 @@ const Header = () => {
                 </li>
               </div>
               <div className="pb-12">
-                <label className="text-lg font-bold block mb-4">
-                  Components
-                </label>
+                <span className="text-lg font-bold block mb-4">Components</span>
                 {generateMenuList(componentsData, "mobile", closeSideMenu)}
               </div>
               <div className="pb-4">
