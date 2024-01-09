@@ -158,7 +158,15 @@ const Home = () => {
         </div>
         <div>
           <small className="text-white">
-            &copy;{`${new Date().getFullYear()} Marie Otaki`}
+            &copy;
+            {`${new Date().getFullYear()} `}
+            <a
+              href="https://linktr.ee/marieotaki"
+              target="_blank"
+              className="underline"
+            >
+              Marie Otaki
+            </a>
           </small>
         </div>
       </footer>
