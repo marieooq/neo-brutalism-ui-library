@@ -6,6 +6,7 @@ type IconButtonType = {
   icon: string;
   color?: "violet" | "pink" | "red" | "orange" | "yellow" | "lime" | "cyan";
   disabled?: boolean;
+  className?: string;
 };
 
 const IconButton = ({
@@ -14,6 +15,7 @@ const IconButton = ({
   icon,
   color = "cyan",
   disabled = false,
+  className,
 }: IconButtonType) => {
   return (
     <button
@@ -65,7 +67,8 @@ const IconButton = ({
         {
           "border-[#727272] bg-[#D4D4D4] text-[#676767] hover:bg-[#D4D4D4] hover:shadow-none active:bg-[#D4D4D4]":
             disabled,
-        }
+        },
+        className
       )}
       disabled={disabled}
     >

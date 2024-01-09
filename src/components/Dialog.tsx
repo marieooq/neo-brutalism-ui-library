@@ -14,6 +14,7 @@ type DialogType = {
     | "yellow"
     | "lime"
     | "cyan";
+  className?: string;
 };
 
 const Dialog = ({
@@ -22,6 +23,7 @@ const Dialog = ({
   cancelButtonText,
   actionButtonText,
   actionButtonColor,
+  className,
 }: DialogType) => {
   return (
     <div
@@ -30,7 +32,8 @@ const Dialog = ({
         { "w-fit": width === "fit" },
         { "w-full": width === "full" },
         { "w-1/2": width === "1/2" },
-        { "w-1/3": width === "1/3" }
+        { "w-1/3": width === "1/3" },
+        className
       )}
     >
       <div>

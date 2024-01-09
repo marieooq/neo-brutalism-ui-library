@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import SampleImage from "../assets/neo-brutalism-image1.jpg";
-import SampleImage2 from "../assets/neo-brutalism-image2.jpg";
-import SampleImage3 from "../assets/neo-brutalism-image3.jpg";
-import SampleImage3Mobile from "../assets/neo-brutalism-image3-mobile.jpg";
+import CardThumbnail from "../assets/neo-brutalism-image2.jpg";
+import PromotionImage from "../assets/neo-brutalism-image3.jpg";
+import PromotionImageMobile from "../assets/neo-brutalism-image3-mobile.jpg";
 import Card from "../components/Card";
+import Button from "../components/Button";
 import ExternalLinkCard from "../components/ExternalLinkCard";
 import Checkbox from "../components/Checkbox";
 import cardMarkup from "../data/cardMarkup";
@@ -13,20 +13,26 @@ import cardMarkup from "../data/cardMarkup";
 const Home = () => {
   return (
     <div className="snap-mandatory snap-y overflow-scroll">
-      <section className="bg-teal-200 w-full h-[calc(100vh-80px)] snap-start snap-always shrink-0">
-        <div className="w-full h-full bg-pink-200 relative">
-          <Link to="/overview">
-            <img
-              src={SampleImage}
-              alt="hero"
-              className="w-full h-full object-cover"
-            />
-          </Link>
-          <div className="absolute bottom-[120px] right-0 left-0 m-auto w-[200px] h-12 block md:hidden">
+      <section className="bg-teal-200 w-full h-[calc(100vh-80px)] min-h-screen snap-start snap-always shrink-0">
+        <div className="w-full h-full bg-pink-200 relative bg-cover bg-no-repeat bg-center bg-scroll bg-mobile md:bg-desktop">
+          <div className="px-5 md:px-40 flex flex-col md:flex-row items-center md:items-end gap-8 md:gap-12">
+            <div className="mt-32 md:mt-10">
+              <h1 className="text-7xl md:text-8xl font-black md:pt-14 tracking-tight hero-font mb-5">
+                Neo-Brutalism UI
+              </h1>
+              <p className="text-2xl md:text-3xl hero-font">
+                Neobrutalism is high contrast, bright colors, and bold shapes
+                <br /> used for eye-catching statements, UI, web, design.
+              </p>
+            </div>
             <Link to="overview">
-              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#FFF59F] hover:bg-[#FFF066] active:bg-[#FFE500] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
-                Get Started
-              </button>
+              <Button
+                buttonText="Get Started"
+                rounded="full"
+                size="lg"
+                color="yellow"
+                className="w-[200px]"
+              />
             </Link>
           </div>
         </div>
@@ -57,14 +63,14 @@ const Home = () => {
           </div>
           <div className="flex-1 w-full h-full max-h-[600px] border-black border-2 rounded-lg shadow-[8px_8px_0px_rgba(0,0,0,1)]">
             <img
-              src={SampleImage3}
-              alt="hero"
-              className="w-full h-full object-cover hidden md:inline"
+              src={PromotionImage}
+              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
+              className="w-full h-full max-h-[600px] object-cover hidden md:inline"
             />
             <img
-              src={SampleImage3Mobile}
-              alt="hero"
-              className="w-full h-full object-cover inline md:hidden"
+              src={PromotionImageMobile}
+              alt="Graphic of a woman using a laptop with NEO-BRUTALISM UI design elements and colorful, bold shapes displayed on the screen."
+              className="w-full h-full max-h-[600px] object-cover inline md:hidden"
             />
           </div>
         </div>
@@ -77,7 +83,7 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="What is Neo Brutallism UI?"
                 description="Visit the Getting Started page and learn about its features."
@@ -87,7 +93,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%] mb-12 md:mb-0">
               <Card
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="Want to browse the components?"
                 description="Let's take a look at what components are available. You can quickly integrate them into your project with copy and paste."
@@ -97,7 +103,7 @@ const Home = () => {
             </div>
             <div className="md:w-[30%]">
               <ExternalLinkCard
-                thumbnail={SampleImage2}
+                thumbnail={CardThumbnail}
                 date="June 15th, 2023"
                 title="Interested in viewing the code?"
                 description="Get ready for an in-depth exploration of the components in action within the codebase. Let's dive deep into how these components work behind the scenes!"
@@ -133,9 +139,13 @@ const Home = () => {
               and take your web design to the next level!
             </p>
             <Link to="overview">
-              <button className="w-[200px] h-12 border-black border-2 p-2.5 bg-[#B8FF9F] hover:bg-[#9dfc7c] active:bg-[#7df752] shadow-[2px_2px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_rgba(0,0,0,1)] rounded-full">
-                Get Started
-              </button>
+              <Button
+                buttonText="Get Started"
+                rounded="full"
+                size="lg"
+                color="lime"
+                className="w-[200px]"
+              />
             </Link>
           </div>
         </div>
