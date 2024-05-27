@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { useState } from "react";
 
 type ProgressBarType = {
   minValue?: number;
@@ -33,7 +32,7 @@ const ProgressBar = ({
         { "rounded-none": rounded === "none" },
         { "rounded-md": rounded === "md" },
         { "rounded-full": rounded === "full" },
-        { "hover:shadow-[2px_2px_0px_rgba(0,0,0,1)]": !disabled},
+        { "shadow-[2px_2px_0px_rgba(0,0,0,1)]": !disabled},
         {
             "border-[#727272] bg-[#D4D4D4] text-[#676767] hover:bg-[#D4D4D4] hover:shadow-none active:bg-[#D4D4D4]":
               disabled,
