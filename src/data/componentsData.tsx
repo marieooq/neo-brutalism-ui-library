@@ -9,6 +9,7 @@ import DropDown from "../components/DropDown";
 import IconButton from "../components/IconButton";
 import Input from "../components/Input";
 import ToggleSwitch from "../components/ToggleSwitch";
+import ProgressBar from "../components/ProgressBar";
 import IconButtonMarkup from "./iconButtonMarkup";
 import buttonMarkup from "./buttonMarkup";
 import cardMarkup from "./cardMarkup";
@@ -17,6 +18,7 @@ import dialogMarkup from "./dialogMarkup";
 import dropdownMarkup from "./dropdownMarkup";
 import inputMarkup from "./inputMarkup";
 import toggleSwitchMarkup from "./toggleSwitchMarkup";
+import progressBarMarkup from "./progressBarMarkup";
 import SampleImage from "../assets/neo-brutalism-image1.jpg";
 
 export type componentsDataType = {
@@ -136,6 +138,12 @@ const componentsData: componentsDataType = [
     path: "toggleSwitch",
     component: <ToggleSwitch text="Toggle me" />,
     markup: toggleSwitchMarkup,
+  },
+  {
+    name: "ProgressBar",
+    path: "progressBar",
+    component: <ProgressBar currentValue={70} rounded="full" color="lime" />,
+    markup: progressBarMarkup,
     new: true,
   },
 ];
