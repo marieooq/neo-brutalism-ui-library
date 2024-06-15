@@ -69,7 +69,9 @@ const Component = () => {
       {displayingComponent && (
         <>
           <div className="flex justify-center items-center border-black border-2 rounded mb-12 py-10 bg-violet-100 min-h-[360px]">
-            <div>{displayingComponent?.component}</div>
+            <div className="flex justify-center items-center w-[100%]">
+              {displayingComponent?.component}
+            </div>
           </div>
           <div className="flex justify-end items-center mb-3 space-x-4">
             <div className="block cursor-pointer">
