@@ -76,9 +76,9 @@ const ProgressBar = ({
         {showPercentage && !disabled && (
           <h1
             className={classNames(
-              `mr-2 ${
-                widthPercentage != 100 ? "font-bold" : "font-black"
-              } opacity-60`,
+              "mr-2",
+              widthPercentage !== 100 ? "font-bold" : "font-black",
+              widthPercentage !== 100 ? "opacity-60" : "opacity-100",
               className
             )}
           >
